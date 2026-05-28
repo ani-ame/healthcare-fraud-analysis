@@ -14,7 +14,16 @@
 # ---
 
 # %% [markdown]
+# # Healthcare Fraud Detection
+
+# %% [markdown]
 # ## Business Question
 
 # %% [markdown]
-# > What patterns most reliably identify fraudulent insurance claims?
+# > _What patterns most reliably identify fraudulent insurance claims?_
+
+# %% [markdown]
+# ## Dataset
+
+# %% [markdown]
+# > Sourced from Kaggle, this dataset comprises 10,000 simulated healthcare insurance claims that model real-world fraud scenarios. It includes a range of patient, provider, and financial attributes.
