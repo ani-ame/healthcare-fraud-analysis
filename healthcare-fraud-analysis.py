@@ -46,11 +46,14 @@ fraud_df = pd.read_csv("healthcare_fraud_detection.csv")
 # %%
 df = fraud_df
 print(f"Dataset loaded: {df.shape[0]:,} rows × {df.shape[1]} columns")
-display(df.head())
+df.head()
+
+# %%
 df.info()
 print(f"\nMissing values per column:\n{df.isnull().sum()}")
 print(f"\nNumber of duplicate rows: {df.duplicated().sum()}")
 
+# %%
 print(f"\nFraud breakdown:\n{df['Is_Fraud'].value_counts()}")
 print(f"\nFraud rate: {df['Is_Fraud'].mean():.2%}")
 
@@ -65,11 +68,14 @@ df["Insurance_Type"] = df["Insurance_Type"].fillna("Unknown")
 df["Provider_Specialty"] = df["Provider_Specialty"].fillna("Unknown")
 
 # %%
-print(df["Prior_Visits_12m"].describe())
-print(f"Skewness: {df['Prior_Visits_12m'].skew()}")
+print(df["Prior_Visits_12m"].describe().round(3))
+skewness = df["Prior_Visits_12m"].skew()
+print(f"Skewness: {skewness:.2f}")
 
 # %%
-df["Prior_Visits_12m"] = df["Prior_Visits_12m"].fillna(df["Prior_Visits_12m"].median())
+df["Prior_Visits_12m"] = df["Prior_Visits_12m"].fillna(
+    df["Prior_Visits_12m"].median()
+)
 
 # %%
 df.info()
@@ -78,18 +84,27 @@ df.info()
 # ## Feature Engineering
 
 # %%
-print(df["Number_of_Claims_Per_Provider_Monthly"].describe())
+print(df["Number_of_Claims_Per_Provider_Monthly"].describe().round(3))
 
 # %%
 # Flag providers with more than 90 monthly claims
-df["High_Volume_Claims_Flag"] = (df["Number_of_Claims_Per_Provider_Monthly"] > 90).astype(int)
+df["High_Volume_Claims_Flag"] = (
+    df["Number_of_Claims_Per_Provider_Monthly"]
+        .gt(90)
+        .astype(int)
+)
 
 # %%
 # Extract components from date column
 df["Month"] = df["Claim_Submission_Date"].dt.month_name()
 df["Quarter"] = "Q" + df["Claim_Submission_Date"].dt.quarter.astype(str)
 df["Year"] = df["Claim_Submission_Date"].dt.year
-df
+
+# %%
+# Measure the gap between what was claimed and what was approved 
+df["Approved_Amt_Gap"] = df["Claim_Amount"] - df["Approved_Amount"]
+df["Approved_Rate"] = (df["Approved_Amount"] / df["Claim_Amount"]).round(2)
+df.head()
 
 # %% [markdown]
 # ## Analysis
@@ -104,9 +119,9 @@ def fraud_by (column):
     return (
         df.groupby(column)["Is_Fraud"]
             .agg(
-                Fraud_Rate = "mean"
-                ,Fraud_Claims = "sum"
-                ,Total_Claims = "count"
+                Fraud_Rate = "mean",
+                Fraud_Claims = "sum",
+                Total_Claims = "count"
         )
         .sort_values("Fraud_Rate", ascending=False)
         .reset_index()
@@ -142,6 +157,22 @@ low_rate = fraud_by_hv['Fraud_Rate'].iloc[1]
 
 print(f"High {label}: {high_rate:.2%}")
 print(f"Low {label}: {low_rate:.2%}")
+
+# %%
+# Claims averages - fraud (1) vs legitimate (0)
+claims_avgs = (
+    df.groupby("Is_Fraud")[
+        ["Claim_Amount", 
+         "Approved_Amount", 
+         "Approved_Amt_Gap", 
+         "Days_Between_Service_and_Claim"]
+    ]
+    .mean()
+    .round(2)
+    .reset_index()
+)
+
+claims_avgs
 
 
 # %% [markdown]
