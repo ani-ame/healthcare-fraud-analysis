@@ -143,61 +143,46 @@ low_rate = fraud_by_hv['Fraud_Rate'].iloc[1]
 print(f"High {label}: {high_rate:.2%}")
 print(f"Low {label}: {low_rate:.2%}")
 
+
 # %% [markdown]
 # ## Visualisations
 
 # %%
-# Fraud rate by provider specialty
-plt.figure()
+# Function for 'fraud rate by' chart
+def fraud_rate_by_chart(fraud_by_df, category_col, title):
+    plt.figure()
+    plt.barh(
+        fraud_by_df[category_col],
+        fraud_by_df["Fraud_Rate"] * 100,
+        color="#2A9D8F"
+    )
+    plt.axvline(
+        x=fraud_rate * 100,
+        linestyle="--",
+        label=f"Overall Avg Fraud Rate ({fraud_rate:.2%})",
+        color="#6C757D"
+    )
+    plt.legend()
+    plt.title(title, fontweight="bold")
+    plt.xlabel("Fraud Rate (%)")
+    plt.ylabel(category_col.replace('_', ' '))
+    plt.tight_layout()
+    plt.savefig(f"charts/fraud_rate_by_{category_col.lower()}.png")
+    plt.show()
 
-plt.barh(
-    fraud_by_provider_specialty["Provider_Specialty"],
-    fraud_by_provider_specialty["Fraud_Rate"] * 100,
-    color="#2A9D8F"
-)
-
-plt.axvline(
-    x = fraud_rate * 100,
-    linestyle="--",
-    label=f"Overall Avg Fraud Rate ({fraud_rate:.1%})",
-    color="#6C757D"
-)
-
-plt.legend()
-
-plt.title("Fraud Rate by Provider Specialty", fontweight="bold")
-
-plt.xlabel("Fraud Rate (%)")
-plt.ylabel("Provider Specialty")
-
-plt.tight_layout()
-
-plt.savefig("charts/fraud_rate_by_specialty.png")
 
 # %%
-# Fraud rate by insurance type
-plt.figure()
-
-plt.barh(
-    fraud_by_insurance_type["Insurance_Type"],
-    fraud_by_insurance_type["Fraud_Rate"] * 100,
-    color="#2A9D8F"
+# Fraud rate by provider specialty chart
+fraud_rate_by_chart(
+    fraud_by_provider_specialty,
+    "Provider_Specialty", 
+    "Fraud Rate by Provider Specialty"
 )
 
-plt.axvline(
-    x=fraud_rate * 100,
-    linestyle="--",
-    label=f"Overall Avg Fraud Rate ({fraud_rate:.1%})",
-    color="#6C757D"
+# %%
+# Fraud rate by insurance type chart
+fraud_rate_by_chart(
+    fraud_by_insurance_type,
+    "Insurance_Type", 
+    "Fraud Rate by Insurance Type"
 )
-
-plt.legend()
-
-plt.title("Fraud Rate by Insurance Type",fontweight="bold")
-
-plt.xlabel("Fraud Rate (%)")
-plt.ylabel("Insurance Type")
-
-plt.tight_layout()
-
-plt.savefig("charts/fraud_rate_by_insurance_type.png")
