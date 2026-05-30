@@ -165,7 +165,7 @@ plt.axvline(
 
 plt.legend()
 
-plt.title("Fraud Rate by Provider Specialty")
+plt.title("Fraud Rate by Provider Specialty", fontweight="bold")
 
 plt.xlabel("Fraud Rate (%)")
 plt.ylabel("Provider Specialty")
@@ -193,7 +193,7 @@ plt.axvline(
 
 plt.legend()
 
-plt.title("Fraud Rate by Insurance Type")
+plt.title("Fraud Rate by Insurance Type",fontweight="bold")
 
 plt.xlabel("Fraud Rate (%)")
 plt.ylabel("Insurance Type")
@@ -201,5 +201,3 @@ plt.ylabel("Insurance Type")
 plt.tight_layout()
 
 plt.savefig("charts/fraud_rate_by_insurance_type.png")
-
-# %%
