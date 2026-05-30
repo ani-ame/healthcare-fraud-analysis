@@ -50,3 +50,20 @@ print(f"\nNumber of duplicate rows: {df.duplicated().sum()}")
 
 print(f"\nFraud breakdown:\n{df['Is_Fraud'].value_counts()}")
 print(f"\nFraud rate: {df['Is_Fraud'].mean():.2%}")
+
+# %% [markdown]
+# ## Clean Data
+
+# %%
+df["Claim_Submission_Date"] = pd.to_datetime(df["Claim_Submission_Date"])
+
+# %%
+df["Insurance_Type"] = df["Insurance_Type"].fillna("Unknown")
+df["Provider_Specialty"] = df["Provider_Specialty"].fillna("Unknown")
+
+# %%
+print(df["Prior_Visits_12m"].describe())
+print(f"Skewness: {df['Prior_Visits_12m'].skew()}")
+
+# %%
+df["Prior_Visits_12m"] = df["Prior_Visits_12m"].fillna(df["Prior_Visits_12m"].median())
