@@ -30,6 +30,7 @@
 
 # %%
 import pandas as pd
+import matplotlib.pyplot as plt
 
 pd.set_option('display.max_columns', None)
 
@@ -103,6 +104,26 @@ fraud_by_provider_specialty = (
             ,Total_Claims = "count"
         )
         .sort_values("Fraud_Rate", ascending=False)
+        .reset_index()
 )
 
 fraud_by_provider_specialty
+
+# %% [markdown]
+# ## Visualisation
+
+# %%
+# Fraud rate by provider specialty
+plt.figure()
+
+plt.barh(
+    fraud_by_provider_specialty["Provider_Specialty"]
+    ,fraud_by_provider_specialty["Fraud_Rate"] * 100
+)
+
+plt.xlabel("Fraud Rate (%)")
+plt.ylabel("Provider Specialty")
+
+plt.title("Fraud Rate by Provider Specialty")
+
+plt.savefig("fraud_rate_by_specialty.png")
