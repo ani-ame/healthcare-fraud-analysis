@@ -31,6 +31,8 @@
 # %%
 import pandas as pd
 
+pd.set_option('display.max_columns', None)
+
 # %% [markdown]
 # ## Load Data
 
@@ -87,3 +89,20 @@ df["Month"] = df["Claim_Submission_Date"].dt.month_name()
 df["Quarter"] = "Q" + df["Claim_Submission_Date"].dt.quarter.astype(str)
 df["Year"] = df["Claim_Submission_Date"].dt.year
 df
+
+# %% [markdown]
+# ## Analysis
+
+# %%
+# Fraud by provider specialty
+fraud_by_provider_specialty = (
+    df.groupby("Provider_Specialty")["Is_Fraud"]
+        .agg(
+            Fraud_Rate = "mean"
+            ,Fraud_Claims = "sum"
+            ,Total_Claims = "count"
+        )
+        .sort_values("Fraud_Rate", ascending=False)
+)
+
+fraud_by_provider_specialty
