@@ -119,6 +119,18 @@ fraud_by_provider_specialty = fraud_by("Provider_Specialty")
 
 fraud_by_provider_specialty
 
+# %%
+# Fraud by insurance type
+fraud_by_insurance_type = fraud_by("Insurance_Type")
+
+fraud_by_insurance_type
+
+# %%
+# Fraud by visit type
+fraud_by_visit_type = fraud_by("Visit_Type")
+
+fraud_by_visit_type 
+
 # %% [markdown]
 # ## Visualisations
 
@@ -146,6 +158,6 @@ plt.ylabel("Provider Specialty")
 
 plt.tight_layout()
 
-plt.savefig("fraud_rate_by_specialty.png")
+plt.savefig("charts/fraud_rate_by_specialty.png")
 
 # %%
