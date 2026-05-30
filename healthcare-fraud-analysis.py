@@ -131,6 +131,18 @@ fraud_by_visit_type = fraud_by("Visit_Type")
 
 fraud_by_visit_type 
 
+# %%
+# Fraud by high volume providers
+fraud_by_hv = fraud_by("High_Volume_Claims_Flag")
+display(fraud_by_hv)
+
+label = "volume monthly claims providers fraud pct"
+high_rate = fraud_by_hv['Fraud_Rate'].iloc[0]
+low_rate = fraud_by_hv['Fraud_Rate'].iloc[1]
+
+print(f"High {label}: {high_rate:.2%}")
+print(f"Low {label}: {low_rate:.2%}")
+
 # %% [markdown]
 # ## Visualisations
 
@@ -181,8 +193,6 @@ plt.axvline(
 
 plt.legend()
 
-plt.legend()
-
 plt.title("Fraud Rate by Insurance Type")
 
 plt.xlabel("Fraud Rate (%)")
@@ -191,3 +201,5 @@ plt.ylabel("Insurance Type")
 plt.tight_layout()
 
 plt.savefig("charts/fraud_rate_by_insurance_type.png")
+
+# %%
