@@ -161,3 +161,29 @@ plt.tight_layout()
 plt.savefig("charts/fraud_rate_by_specialty.png")
 
 # %%
+# Fraud rate by insurance type
+plt.figure()
+
+plt.barh(
+    fraud_by_provider_specialty["Insurance_Type"]
+    ,fraud_by_provider_specialty["Fraud_Rate"] * 100
+)
+
+plt.axvline(
+    x = fraud_rate * 100
+    ,linestyle="--"
+    ,label=f"Overall Avg Fraud Rate ({fraud_rate:.1%})"
+)
+
+plt.legend()
+
+plt.title("Fraud Rate by Insurance Type")
+
+plt.xlabel("Fraud Rate (%)")
+plt.ylabel("Insurance_Type")
+
+plt.tight_layout()
+
+plt.savefig("charts/fraud_rate_by_insurance_type.png")
+
+# %%
