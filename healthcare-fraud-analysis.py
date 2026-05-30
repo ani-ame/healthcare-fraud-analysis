@@ -104,6 +104,10 @@ df["Year"] = df["Claim_Submission_Date"].dt.year
 # Measure the gap between what was claimed and what was approved 
 df["Approved_Amt_Gap"] = df["Claim_Amount"] - df["Approved_Amount"]
 df["Approved_Rate"] = (df["Approved_Amount"] / df["Claim_Amount"]).round(2)
+
+# %%
+# Fraud or legit
+df["Fraud_Label"] = df["Is_Fraud"].map({1: "Fraud", 0: "Legitimate"})
 df.head()
 
 # %% [markdown]
@@ -111,6 +115,7 @@ df.head()
 
 # %%
 fraud_rate = df["Is_Fraud"].mean()
+avg_claims_count = df["Claim_Amount"].mean()
 
 
 # %%
@@ -159,17 +164,23 @@ print(f"High {label}: {high_rate:.2%}")
 print(f"Low {label}: {low_rate:.2%}")
 
 # %%
-# Claims averages - fraud (1) vs legitimate (0)
+# Claims averages - fraud vs legitimate
 claims_avgs = (
-    df.groupby("Is_Fraud")[
-        ["Claim_Amount", 
-         "Approved_Amount", 
-         "Approved_Amt_Gap", 
+    df.groupby("Fraud_Label")[
+        ["Claim_Amount",
+         "Approved_Amount",
+         "Approved_Amt_Gap",
          "Days_Between_Service_and_Claim"]
     ]
     .mean()
     .round(2)
     .reset_index()
+    .rename(columns={
+        "Claim_Amount": "Avg_Claim_Amount",
+        "Approved_Amount": "Avg_Approved_Amount",
+        "Approved_Amt_Gap": "Avg_Approved_Amt_Gap",
+        "Days_Between_Service_and_Claim": "Avg_Days_Between_Service_and_Claim"
+    })
 )
 
 claims_avgs
@@ -217,3 +228,29 @@ fraud_rate_by_chart(
     "Insurance_Type", 
     "Fraud Rate by Insurance Type"
 )
+
+# %%
+# Claims averages - fraud vs legitimate chart
+plt.figure()
+
+bar_colors = ["#2A9D8F", "#4C78A8"] 
+plt.bar(
+    claims_avgs["Fraud_Label"],
+    claims_avgs["Avg_Claim_Amount"],
+    color=bar_colors,
+    width=0.5
+)
+
+plt.axhline(
+    y=avg_claims_count,
+    linestyle="--",
+    label=f"Overall Avg Claim Amount ({avg_claims_count:.0f})",
+    color="#6C757D"
+)
+
+plt.legend()
+plt.title("Average Claim Amount: Fraud vs Legitimate", fontweight="bold")
+plt.ylabel("Average Claim Amount ($)")
+plt.tight_layout()
+plt.savefig("charts/claim_amounts.png")
+plt.show()
