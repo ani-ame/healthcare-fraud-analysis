@@ -95,22 +95,32 @@ df
 # ## Analysis
 
 # %%
-# Fraud by provider specialty
-fraud_by_provider_specialty = (
-    df.groupby("Provider_Specialty")["Is_Fraud"]
-        .agg(
-            Fraud_Rate = "mean"
-            ,Fraud_Claims = "sum"
-            ,Total_Claims = "count"
+fraud_rate = df["Is_Fraud"].mean()
+
+
+# %%
+# Function to return fraud rate, fraud claims and claim count for a column.
+def fraud_by (column):
+    return (
+        df.groupby(column)["Is_Fraud"]
+            .agg(
+                Fraud_Rate = "mean"
+                ,Fraud_Claims = "sum"
+                ,Total_Claims = "count"
         )
         .sort_values("Fraud_Rate", ascending=False)
         .reset_index()
-)
+    )
+
+
+# %%
+# Fraud by provider specialty
+fraud_by_provider_specialty = fraud_by("Provider_Specialty")
 
 fraud_by_provider_specialty
 
 # %% [markdown]
-# ## Visualisation
+# ## Visualisations
 
 # %%
 # Fraud rate by provider specialty
@@ -121,9 +131,21 @@ plt.barh(
     ,fraud_by_provider_specialty["Fraud_Rate"] * 100
 )
 
-plt.xlabel("Fraud Rate (%)")
-plt.ylabel("Provider Specialty")
+plt.axvline(
+    x = fraud_rate * 100
+    ,linestyle="--"
+    ,label=f"Overall Avg Fraud Rate ({fraud_rate:.1%})"
+)
+
+plt.legend()
 
 plt.title("Fraud Rate by Provider Specialty")
 
+plt.xlabel("Fraud Rate (%)")
+plt.ylabel("Provider Specialty")
+
+plt.tight_layout()
+
 plt.savefig("fraud_rate_by_specialty.png")
+
+# %%
