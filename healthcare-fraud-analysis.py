@@ -67,3 +67,23 @@ print(f"Skewness: {df['Prior_Visits_12m'].skew()}")
 
 # %%
 df["Prior_Visits_12m"] = df["Prior_Visits_12m"].fillna(df["Prior_Visits_12m"].median())
+
+# %%
+df.info()
+
+# %% [markdown]
+# ## Feature Engineering
+
+# %%
+print(df["Number_of_Claims_Per_Provider_Monthly"].describe())
+
+# %%
+# Flag providers with more than 90 monthly claims
+df["High_Volume_Claims_Flag"] = (df["Number_of_Claims_Per_Provider_Monthly"] > 90).astype(int)
+
+# %%
+# Extract components from date column
+df["Month"] = df["Claim_Submission_Date"].dt.month_name()
+df["Quarter"] = "Q" + df["Claim_Submission_Date"].dt.quarter.astype(str)
+df["Year"] = df["Claim_Submission_Date"].dt.year
+df
