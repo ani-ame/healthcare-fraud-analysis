@@ -1,0 +1,810 @@
+Provider_Specialty,Insurance_Type,Patient_State,Visit_Type,Total_Claims,Fraud_Cases,Fraud_Rate,Avg_Claim_Amount,Avg_Approved_Amount,Avg_Days_To_Submit
+Cardiology,Medicaid,CA,Emergency,13,1,0.0769,605.26,502.89,13.9
+Cardiology,Medicaid,CA,Inpatient,12,2,0.1667,635.65,533.56,10.8
+Cardiology,Medicaid,CA,Outpatient,14,2,0.1429,537.03,453.27,15.1
+Cardiology,Medicaid,FL,Emergency,10,2,0.2,722.77,596.12,12.4
+Cardiology,Medicaid,FL,Inpatient,21,2,0.0952,497.5,428.66,15.4
+Cardiology,Medicaid,FL,Outpatient,20,1,0.05,550.49,471.11,13.8
+Cardiology,Medicaid,GA,Emergency,15,0,0.0,546.89,470.5,13.6
+Cardiology,Medicaid,GA,Inpatient,16,1,0.0625,633.24,522.32,15.6
+Cardiology,Medicaid,GA,Outpatient,11,1,0.0909,636.05,532.87,11.5
+Cardiology,Medicaid,IL,Emergency,15,0,0.0,505.7,445.69,12.9
+Cardiology,Medicaid,IL,Inpatient,15,1,0.0667,578.75,517.19,15.7
+Cardiology,Medicaid,IL,Outpatient,13,0,0.0,504.63,442.75,16.0
+Cardiology,Medicaid,NY,Emergency,14,1,0.0714,494.96,440.5,12.4
+Cardiology,Medicaid,NY,Inpatient,19,2,0.1053,702.07,589.89,13.2
+Cardiology,Medicaid,NY,Outpatient,14,2,0.1429,642.26,495.26,12.1
+Cardiology,Medicaid,OH,Emergency,14,0,0.0,382.96,327.36,17.3
+Cardiology,Medicaid,OH,Inpatient,10,1,0.1,496.47,382.3,14.8
+Cardiology,Medicaid,OH,Outpatient,18,0,0.0,593.1,505.9,17.2
+Cardiology,Medicaid,PA,Emergency,17,3,0.1765,541.28,386.56,15.7
+Cardiology,Medicaid,PA,Inpatient,13,0,0.0,500.34,444.37,16.2
+Cardiology,Medicaid,PA,Outpatient,11,1,0.0909,641.07,535.38,16.5
+Cardiology,Medicaid,TX,Emergency,14,3,0.2143,633.14,465.99,11.3
+Cardiology,Medicaid,TX,Inpatient,10,0,0.0,466.75,410.82,16.2
+Cardiology,Medicaid,TX,Outpatient,16,1,0.0625,500.99,430.26,13.7
+Cardiology,Medicare,CA,Emergency,13,1,0.0769,812.33,715.87,13.5
+Cardiology,Medicare,CA,Inpatient,7,1,0.1429,641.87,496.51,16.1
+Cardiology,Medicare,CA,Outpatient,14,0,0.0,431.4,375.5,17.9
+Cardiology,Medicare,FL,Emergency,13,2,0.1538,604.09,513.63,15.3
+Cardiology,Medicare,FL,Inpatient,13,1,0.0769,577.49,467.22,15.0
+Cardiology,Medicare,FL,Outpatient,9,1,0.1111,536.73,415.71,14.2
+Cardiology,Medicare,GA,Emergency,16,3,0.1875,442.68,367.29,12.2
+Cardiology,Medicare,GA,Inpatient,9,0,0.0,665.04,571.54,13.3
+Cardiology,Medicare,GA,Outpatient,15,2,0.1333,681.28,580.65,12.9
+Cardiology,Medicare,IL,Emergency,12,1,0.0833,642.81,555.56,16.4
+Cardiology,Medicare,IL,Inpatient,9,0,0.0,386.25,352.07,15.0
+Cardiology,Medicare,IL,Outpatient,14,3,0.2143,704.11,508.4,10.1
+Cardiology,Medicare,NY,Emergency,16,0,0.0,651.39,580.99,14.6
+Cardiology,Medicare,NY,Inpatient,10,1,0.1,725.31,612.79,14.2
+Cardiology,Medicare,NY,Outpatient,7,0,0.0,564.46,483.44,14.9
+Cardiology,Medicare,OH,Emergency,10,0,0.0,554.81,487.51,16.0
+Cardiology,Medicare,OH,Inpatient,8,0,0.0,819.4,712.67,15.9
+Cardiology,Medicare,OH,Outpatient,9,0,0.0,387.25,337.67,15.1
+Cardiology,Medicare,PA,Emergency,15,2,0.1333,683.63,553.91,14.1
+Cardiology,Medicare,PA,Inpatient,13,0,0.0,438.14,389.48,15.9
+Cardiology,Medicare,PA,Outpatient,9,1,0.1111,775.11,683.3,14.9
+Cardiology,Medicare,TX,Emergency,14,0,0.0,517.31,449.5,13.7
+Cardiology,Medicare,TX,Inpatient,18,0,0.0,539.93,487.81,20.1
+Cardiology,Medicare,TX,Outpatient,22,2,0.0909,662.33,565.92,15.9
+Cardiology,Private,CA,Emergency,11,0,0.0,469.22,422.25,14.5
+Cardiology,Private,CA,Inpatient,13,2,0.1538,676.4,576.96,15.8
+Cardiology,Private,CA,Outpatient,14,0,0.0,545.69,457.9,11.6
+Cardiology,Private,FL,Emergency,5,0,0.0,641.37,598.19,20.0
+Cardiology,Private,FL,Inpatient,13,0,0.0,641.79,568.42,14.0
+Cardiology,Private,FL,Outpatient,20,4,0.2,601.13,478.46,13.3
+Cardiology,Private,GA,Emergency,14,2,0.1429,630.17,560.42,13.4
+Cardiology,Private,GA,Inpatient,14,1,0.0714,537.9,434.66,15.3
+Cardiology,Private,GA,Outpatient,15,1,0.0667,546.63,433.73,16.3
+Cardiology,Private,IL,Emergency,15,1,0.0667,589.75,530.55,17.4
+Cardiology,Private,IL,Inpatient,13,0,0.0,435.36,374.31,14.9
+Cardiology,Private,IL,Outpatient,19,1,0.0526,427.03,349.07,14.1
+Cardiology,Private,NY,Emergency,11,1,0.0909,456.52,388.06,14.8
+Cardiology,Private,NY,Inpatient,8,1,0.125,621.87,475.0,16.5
+Cardiology,Private,NY,Outpatient,19,1,0.0526,629.78,539.26,11.6
+Cardiology,Private,OH,Emergency,18,1,0.0556,706.73,542.88,13.4
+Cardiology,Private,OH,Inpatient,12,0,0.0,680.63,618.34,13.4
+Cardiology,Private,OH,Outpatient,14,0,0.0,491.71,436.74,15.6
+Cardiology,Private,PA,Emergency,18,2,0.1111,518.13,402.32,11.9
+Cardiology,Private,PA,Inpatient,16,1,0.0625,521.39,439.42,12.9
+Cardiology,Private,PA,Outpatient,16,2,0.125,440.2,381.45,9.7
+Cardiology,Private,TX,Emergency,15,3,0.2,504.88,394.26,12.6
+Cardiology,Private,TX,Inpatient,16,0,0.0,427.22,371.74,14.8
+Cardiology,Private,TX,Outpatient,13,2,0.1538,549.29,468.6,13.6
+Cardiology,Self-Pay,CA,Emergency,13,2,0.1538,513.15,429.79,11.7
+Cardiology,Self-Pay,CA,Inpatient,14,1,0.0714,484.13,426.54,11.2
+Cardiology,Self-Pay,CA,Outpatient,24,3,0.125,673.77,486.75,12.0
+Cardiology,Self-Pay,FL,Emergency,3,1,0.3333,890.21,452.49,16.7
+Cardiology,Self-Pay,FL,Inpatient,14,1,0.0714,599.92,472.59,13.3
+Cardiology,Self-Pay,FL,Outpatient,17,1,0.0588,455.19,369.76,16.8
+Cardiology,Self-Pay,GA,Emergency,13,0,0.0,527.0,447.11,14.5
+Cardiology,Self-Pay,GA,Inpatient,10,1,0.1,468.81,405.27,15.7
+Cardiology,Self-Pay,GA,Outpatient,12,1,0.0833,426.67,340.34,13.6
+Cardiology,Self-Pay,IL,Emergency,23,2,0.087,559.19,485.92,16.3
+Cardiology,Self-Pay,IL,Inpatient,6,0,0.0,531.38,487.76,11.5
+Cardiology,Self-Pay,IL,Outpatient,18,1,0.0556,528.7,453.01,14.8
+Cardiology,Self-Pay,NY,Emergency,21,2,0.0952,626.56,507.5,11.4
+Cardiology,Self-Pay,NY,Inpatient,9,0,0.0,578.16,502.13,17.1
+Cardiology,Self-Pay,NY,Outpatient,12,0,0.0,763.16,667.46,13.4
+Cardiology,Self-Pay,OH,Emergency,16,2,0.125,565.26,468.96,14.2
+Cardiology,Self-Pay,OH,Inpatient,7,0,0.0,505.26,430.04,10.4
+Cardiology,Self-Pay,OH,Outpatient,12,1,0.0833,656.39,562.3,14.2
+Cardiology,Self-Pay,PA,Emergency,19,3,0.1579,672.16,541.33,11.7
+Cardiology,Self-Pay,PA,Inpatient,14,2,0.1429,562.29,473.81,12.6
+Cardiology,Self-Pay,PA,Outpatient,24,1,0.0417,615.94,545.78,16.2
+Cardiology,Self-Pay,TX,Emergency,12,0,0.0,525.23,441.94,15.7
+Cardiology,Self-Pay,TX,Inpatient,10,1,0.1,583.57,509.79,11.3
+Cardiology,Self-Pay,TX,Outpatient,18,0,0.0,529.98,474.29,15.7
+Cardiology,Unknown,CA,Emergency,2,0,0.0,442.74,384.79,8.0
+Cardiology,Unknown,CA,Inpatient,3,0,0.0,497.97,433.36,10.3
+Cardiology,Unknown,FL,Inpatient,2,0,0.0,205.73,166.67,14.5
+Cardiology,Unknown,FL,Outpatient,3,0,0.0,647.21,600.54,10.7
+Cardiology,Unknown,GA,Emergency,1,0,0.0,371.21,286.25,20.0
+Cardiology,Unknown,GA,Outpatient,3,0,0.0,185.25,164.81,17.7
+Cardiology,Unknown,IL,Emergency,2,0,0.0,283.78,255.4,23.0
+Cardiology,Unknown,IL,Inpatient,3,0,0.0,476.82,422.57,12.7
+Cardiology,Unknown,IL,Outpatient,4,0,0.0,531.34,441.88,20.2
+Cardiology,Unknown,NY,Emergency,2,0,0.0,336.59,284.78,26.5
+Cardiology,Unknown,NY,Outpatient,3,0,0.0,886.5,764.08,7.0
+Cardiology,Unknown,OH,Emergency,1,0,0.0,889.13,792.35,18.0
+Cardiology,Unknown,OH,Outpatient,1,0,0.0,761.52,734.23,16.0
+Cardiology,Unknown,PA,Emergency,4,0,0.0,661.2,610.71,15.8
+Cardiology,Unknown,PA,Inpatient,1,0,0.0,212.56,211.28,3.0
+Cardiology,Unknown,TX,Emergency,2,0,0.0,374.94,347.56,19.0
+Cardiology,Unknown,TX,Inpatient,3,0,0.0,515.08,483.67,11.7
+Cardiology,Unknown,TX,Outpatient,3,0,0.0,864.21,666.75,16.0
+General Practice,Medicaid,CA,Emergency,19,1,0.0526,552.08,493.72,12.5
+General Practice,Medicaid,CA,Inpatient,18,1,0.0556,591.48,506.6,13.1
+General Practice,Medicaid,CA,Outpatient,16,0,0.0,783.59,674.71,17.0
+General Practice,Medicaid,FL,Emergency,16,2,0.125,600.75,494.41,14.9
+General Practice,Medicaid,FL,Inpatient,18,0,0.0,627.35,567.59,13.7
+General Practice,Medicaid,FL,Outpatient,20,1,0.05,585.09,461.03,15.8
+General Practice,Medicaid,GA,Emergency,22,2,0.0909,553.64,472.66,14.0
+General Practice,Medicaid,GA,Inpatient,17,2,0.1176,522.12,426.8,12.8
+General Practice,Medicaid,GA,Outpatient,25,3,0.12,570.06,462.54,12.6
+General Practice,Medicaid,IL,Emergency,14,3,0.2143,572.61,427.31,8.1
+General Practice,Medicaid,IL,Inpatient,20,1,0.05,525.85,465.63,14.8
+General Practice,Medicaid,IL,Outpatient,31,3,0.0968,685.13,563.92,13.6
+General Practice,Medicaid,NY,Emergency,20,2,0.1,483.38,403.39,11.8
+General Practice,Medicaid,NY,Inpatient,13,3,0.2308,683.03,570.7,16.7
+General Practice,Medicaid,NY,Outpatient,19,1,0.0526,595.98,506.92,13.1
+General Practice,Medicaid,OH,Emergency,18,3,0.1667,678.26,527.54,16.8
+General Practice,Medicaid,OH,Inpatient,7,1,0.1429,382.18,350.09,15.0
+General Practice,Medicaid,OH,Outpatient,18,4,0.2222,687.15,517.46,10.8
+General Practice,Medicaid,PA,Emergency,28,3,0.1071,715.13,598.73,14.6
+General Practice,Medicaid,PA,Inpatient,20,3,0.15,639.31,520.86,13.4
+General Practice,Medicaid,PA,Outpatient,19,3,0.1579,647.51,487.47,14.5
+General Practice,Medicaid,TX,Emergency,24,2,0.0833,642.93,555.02,16.7
+General Practice,Medicaid,TX,Inpatient,18,0,0.0,445.57,399.82,16.8
+General Practice,Medicaid,TX,Outpatient,23,2,0.087,435.21,364.9,14.7
+General Practice,Medicare,CA,Emergency,21,3,0.1429,535.18,396.45,14.5
+General Practice,Medicare,CA,Inpatient,15,1,0.0667,406.21,340.79,15.2
+General Practice,Medicare,CA,Outpatient,14,5,0.3571,662.46,404.61,10.6
+General Practice,Medicare,FL,Emergency,17,4,0.2353,504.6,392.02,13.5
+General Practice,Medicare,FL,Inpatient,32,5,0.1562,672.23,511.01,9.6
+General Practice,Medicare,FL,Outpatient,19,0,0.0,618.51,552.93,14.2
+General Practice,Medicare,GA,Emergency,17,1,0.0588,590.39,487.17,14.1
+General Practice,Medicare,GA,Inpatient,24,0,0.0,603.92,530.43,15.5
+General Practice,Medicare,GA,Outpatient,16,0,0.0,461.75,420.05,14.9
+General Practice,Medicare,IL,Emergency,16,3,0.1875,700.66,559.95,13.0
+General Practice,Medicare,IL,Inpatient,20,1,0.05,451.79,392.44,15.2
+General Practice,Medicare,IL,Outpatient,20,3,0.15,709.37,546.67,15.0
+General Practice,Medicare,NY,Emergency,18,3,0.1667,570.18,462.77,16.6
+General Practice,Medicare,NY,Inpatient,14,1,0.0714,465.02,396.05,13.3
+General Practice,Medicare,NY,Outpatient,18,1,0.0556,742.89,566.4,13.8
+General Practice,Medicare,OH,Emergency,27,1,0.037,514.06,425.93,14.9
+General Practice,Medicare,OH,Inpatient,11,2,0.1818,610.82,464.32,14.5
+General Practice,Medicare,OH,Outpatient,15,1,0.0667,660.52,546.26,16.9
+General Practice,Medicare,PA,Emergency,22,5,0.2273,643.56,516.05,10.2
+General Practice,Medicare,PA,Inpatient,20,1,0.05,473.07,405.67,15.8
+General Practice,Medicare,PA,Outpatient,18,3,0.1667,568.18,434.67,12.4
+General Practice,Medicare,TX,Emergency,26,3,0.1154,596.86,487.11,15.1
+General Practice,Medicare,TX,Inpatient,14,2,0.1429,853.86,670.63,15.4
+General Practice,Medicare,TX,Outpatient,13,1,0.0769,608.67,501.64,10.8
+General Practice,Private,CA,Emergency,17,0,0.0,609.54,549.71,15.2
+General Practice,Private,CA,Inpatient,27,4,0.1481,533.17,436.08,13.4
+General Practice,Private,CA,Outpatient,15,1,0.0667,457.93,376.07,17.5
+General Practice,Private,FL,Emergency,17,2,0.1176,577.03,480.83,15.6
+General Practice,Private,FL,Inpatient,15,2,0.1333,561.32,477.28,12.1
+General Practice,Private,FL,Outpatient,20,1,0.05,533.72,431.47,16.3
+General Practice,Private,GA,Emergency,11,2,0.1818,950.63,704.85,11.3
+General Practice,Private,GA,Inpatient,22,2,0.0909,616.38,502.17,13.5
+General Practice,Private,GA,Outpatient,19,3,0.1579,612.76,488.89,15.1
+General Practice,Private,IL,Emergency,13,1,0.0769,475.7,340.82,15.5
+General Practice,Private,IL,Inpatient,19,3,0.1579,528.78,428.95,15.2
+General Practice,Private,IL,Outpatient,14,2,0.1429,502.18,415.95,13.2
+General Practice,Private,NY,Emergency,14,1,0.0714,665.04,558.91,15.3
+General Practice,Private,NY,Inpatient,24,2,0.0833,556.31,473.88,14.3
+General Practice,Private,NY,Outpatient,15,2,0.1333,922.14,741.64,10.6
+General Practice,Private,OH,Emergency,24,1,0.0417,515.06,446.18,14.8
+General Practice,Private,OH,Inpatient,15,2,0.1333,554.05,435.93,14.9
+General Practice,Private,OH,Outpatient,31,0,0.0,511.64,437.55,15.0
+General Practice,Private,PA,Emergency,15,0,0.0,421.19,383.76,13.3
+General Practice,Private,PA,Inpatient,24,2,0.0833,515.06,431.71,10.1
+General Practice,Private,PA,Outpatient,19,1,0.0526,392.86,305.11,13.9
+General Practice,Private,TX,Emergency,21,2,0.0952,491.54,418.6,15.0
+General Practice,Private,TX,Inpatient,14,1,0.0714,603.6,499.44,17.1
+General Practice,Private,TX,Outpatient,25,1,0.04,653.78,528.48,15.9
+General Practice,Self-Pay,CA,Emergency,15,0,0.0,566.18,481.41,16.6
+General Practice,Self-Pay,CA,Inpatient,32,3,0.0938,754.02,608.46,12.4
+General Practice,Self-Pay,CA,Outpatient,18,1,0.0556,570.45,486.26,13.1
+General Practice,Self-Pay,FL,Emergency,24,2,0.0833,522.74,433.29,18.2
+General Practice,Self-Pay,FL,Inpatient,18,2,0.1111,513.1,402.53,12.2
+General Practice,Self-Pay,FL,Outpatient,12,1,0.0833,644.56,469.96,13.8
+General Practice,Self-Pay,GA,Emergency,16,1,0.0625,494.75,396.31,13.0
+General Practice,Self-Pay,GA,Inpatient,15,0,0.0,474.45,432.8,16.6
+General Practice,Self-Pay,GA,Outpatient,20,1,0.05,674.33,566.9,14.0
+General Practice,Self-Pay,IL,Emergency,16,1,0.0625,576.29,491.27,14.1
+General Practice,Self-Pay,IL,Inpatient,26,1,0.0385,508.79,437.13,11.6
+General Practice,Self-Pay,IL,Outpatient,10,1,0.1,480.6,401.12,13.1
+General Practice,Self-Pay,NY,Emergency,23,2,0.087,537.7,452.4,12.6
+General Practice,Self-Pay,NY,Inpatient,20,3,0.15,605.77,506.4,11.0
+General Practice,Self-Pay,NY,Outpatient,16,3,0.1875,536.05,380.1,13.1
+General Practice,Self-Pay,OH,Emergency,26,4,0.1538,609.57,484.26,12.2
+General Practice,Self-Pay,OH,Inpatient,13,2,0.1538,720.29,574.21,14.9
+General Practice,Self-Pay,OH,Outpatient,20,2,0.1,571.39,441.71,16.2
+General Practice,Self-Pay,PA,Emergency,17,0,0.0,504.21,447.29,15.7
+General Practice,Self-Pay,PA,Inpatient,22,3,0.1364,530.98,431.48,11.0
+General Practice,Self-Pay,PA,Outpatient,18,0,0.0,493.96,437.71,16.1
+General Practice,Self-Pay,TX,Emergency,18,6,0.3333,798.12,596.85,12.3
+General Practice,Self-Pay,TX,Inpatient,20,3,0.15,578.01,458.85,15.0
+General Practice,Self-Pay,TX,Outpatient,24,1,0.0417,589.57,512.55,15.9
+General Practice,Unknown,CA,Emergency,3,0,0.0,394.82,349.85,9.7
+General Practice,Unknown,CA,Inpatient,1,0,0.0,1232.32,974.33,29.0
+General Practice,Unknown,CA,Outpatient,4,0,0.0,387.14,314.73,12.0
+General Practice,Unknown,FL,Emergency,3,1,0.3333,703.25,380.52,8.3
+General Practice,Unknown,FL,Inpatient,1,0,0.0,574.49,524.36,21.0
+General Practice,Unknown,FL,Outpatient,4,0,0.0,548.28,501.73,21.8
+General Practice,Unknown,GA,Emergency,2,1,0.5,848.83,468.07,15.0
+General Practice,Unknown,GA,Inpatient,2,0,0.0,574.53,447.16,21.5
+General Practice,Unknown,GA,Outpatient,5,2,0.4,339.3,221.71,9.6
+General Practice,Unknown,IL,Emergency,1,0,0.0,262.35,224.89,15.0
+General Practice,Unknown,IL,Inpatient,2,0,0.0,632.18,560.67,14.5
+General Practice,Unknown,IL,Outpatient,4,0,0.0,445.66,397.86,15.5
+General Practice,Unknown,NY,Emergency,2,0,0.0,686.32,569.69,7.0
+General Practice,Unknown,NY,Outpatient,4,1,0.25,383.42,289.34,14.8
+General Practice,Unknown,OH,Emergency,1,0,0.0,248.69,205.71,29.0
+General Practice,Unknown,OH,Inpatient,4,0,0.0,812.9,715.28,15.8
+General Practice,Unknown,OH,Outpatient,2,0,0.0,543.14,523.42,16.0
+General Practice,Unknown,PA,Emergency,1,0,0.0,193.81,160.4,4.0
+General Practice,Unknown,PA,Inpatient,3,0,0.0,683.72,552.69,12.3
+General Practice,Unknown,PA,Outpatient,4,0,0.0,599.14,498.01,19.2
+General Practice,Unknown,TX,Emergency,3,0,0.0,542.48,458.43,18.0
+General Practice,Unknown,TX,Inpatient,2,0,0.0,374.2,330.54,9.0
+General Practice,Unknown,TX,Outpatient,1,0,0.0,255.72,214.82,29.0
+Internal Medicine,Medicaid,CA,Emergency,19,0,0.0,443.69,403.42,18.3
+Internal Medicine,Medicaid,CA,Inpatient,21,3,0.1429,612.69,481.36,14.1
+Internal Medicine,Medicaid,CA,Outpatient,15,1,0.0667,896.11,755.89,14.6
+Internal Medicine,Medicaid,FL,Emergency,14,3,0.2143,708.03,485.15,16.0
+Internal Medicine,Medicaid,FL,Inpatient,23,2,0.087,545.67,454.79,15.0
+Internal Medicine,Medicaid,FL,Outpatient,17,1,0.0588,612.92,521.59,13.4
+Internal Medicine,Medicaid,GA,Emergency,20,1,0.05,513.26,425.55,11.8
+Internal Medicine,Medicaid,GA,Inpatient,24,4,0.1667,463.06,378.85,13.7
+Internal Medicine,Medicaid,GA,Outpatient,17,3,0.1765,561.04,468.41,13.6
+Internal Medicine,Medicaid,IL,Emergency,17,1,0.0588,624.76,549.11,16.9
+Internal Medicine,Medicaid,IL,Inpatient,20,2,0.1,665.26,561.29,13.6
+Internal Medicine,Medicaid,IL,Outpatient,22,0,0.0,588.19,497.39,16.9
+Internal Medicine,Medicaid,NY,Emergency,15,1,0.0667,537.16,461.83,13.7
+Internal Medicine,Medicaid,NY,Inpatient,14,0,0.0,451.41,390.85,13.1
+Internal Medicine,Medicaid,NY,Outpatient,20,1,0.05,551.66,474.19,16.4
+Internal Medicine,Medicaid,OH,Emergency,15,0,0.0,552.02,502.59,19.7
+Internal Medicine,Medicaid,OH,Inpatient,21,2,0.0952,735.23,642.12,13.9
+Internal Medicine,Medicaid,OH,Outpatient,17,2,0.1176,699.6,564.04,12.4
+Internal Medicine,Medicaid,PA,Emergency,15,6,0.4,698.2,466.09,13.9
+Internal Medicine,Medicaid,PA,Inpatient,23,1,0.0435,477.77,404.81,13.8
+Internal Medicine,Medicaid,PA,Outpatient,19,2,0.1053,710.52,555.44,13.6
+Internal Medicine,Medicaid,TX,Emergency,25,1,0.04,480.75,414.09,14.6
+Internal Medicine,Medicaid,TX,Inpatient,15,0,0.0,728.38,655.41,17.3
+Internal Medicine,Medicaid,TX,Outpatient,24,2,0.0833,593.11,454.37,14.0
+Internal Medicine,Medicare,CA,Emergency,22,0,0.0,601.81,530.04,16.7
+Internal Medicine,Medicare,CA,Inpatient,20,4,0.2,467.56,383.39,13.0
+Internal Medicine,Medicare,CA,Outpatient,21,1,0.0476,573.09,495.21,12.4
+Internal Medicine,Medicare,FL,Emergency,23,2,0.087,601.22,486.82,13.1
+Internal Medicine,Medicare,FL,Inpatient,15,1,0.0667,402.48,354.67,15.0
+Internal Medicine,Medicare,FL,Outpatient,27,4,0.1481,585.18,452.71,14.2
+Internal Medicine,Medicare,GA,Emergency,21,4,0.1905,538.04,412.35,16.0
+Internal Medicine,Medicare,GA,Inpatient,19,2,0.1053,626.39,519.23,14.8
+Internal Medicine,Medicare,GA,Outpatient,22,2,0.0909,545.43,444.28,11.7
+Internal Medicine,Medicare,IL,Emergency,24,1,0.0417,665.82,552.36,14.9
+Internal Medicine,Medicare,IL,Inpatient,17,1,0.0588,466.31,399.73,13.9
+Internal Medicine,Medicare,IL,Outpatient,25,2,0.08,519.45,419.77,14.7
+Internal Medicine,Medicare,NY,Emergency,17,2,0.1176,597.24,512.82,12.8
+Internal Medicine,Medicare,NY,Inpatient,13,3,0.2308,719.91,473.6,10.8
+Internal Medicine,Medicare,NY,Outpatient,22,0,0.0,759.2,653.21,17.6
+Internal Medicine,Medicare,OH,Emergency,24,1,0.0417,483.58,418.84,18.5
+Internal Medicine,Medicare,OH,Inpatient,19,0,0.0,602.87,537.78,16.9
+Internal Medicine,Medicare,OH,Outpatient,16,1,0.0625,677.51,574.35,11.6
+Internal Medicine,Medicare,PA,Emergency,23,3,0.1304,494.51,407.9,16.9
+Internal Medicine,Medicare,PA,Inpatient,16,1,0.0625,526.55,458.63,15.9
+Internal Medicine,Medicare,PA,Outpatient,13,2,0.1538,659.26,499.21,11.2
+Internal Medicine,Medicare,TX,Emergency,23,2,0.087,500.29,403.12,13.8
+Internal Medicine,Medicare,TX,Inpatient,24,3,0.125,758.36,601.06,11.7
+Internal Medicine,Medicare,TX,Outpatient,29,1,0.0345,627.61,538.76,15.2
+Internal Medicine,Private,CA,Emergency,25,1,0.04,550.63,453.07,16.6
+Internal Medicine,Private,CA,Inpatient,20,4,0.2,579.23,442.98,10.6
+Internal Medicine,Private,CA,Outpatient,20,1,0.05,700.17,617.98,17.3
+Internal Medicine,Private,FL,Emergency,10,0,0.0,474.28,426.57,12.9
+Internal Medicine,Private,FL,Inpatient,17,2,0.1176,502.99,409.42,16.5
+Internal Medicine,Private,FL,Outpatient,30,1,0.0333,498.1,422.44,16.1
+Internal Medicine,Private,GA,Emergency,33,3,0.0909,608.46,502.08,13.5
+Internal Medicine,Private,GA,Inpatient,24,2,0.0833,457.73,382.45,12.6
+Internal Medicine,Private,GA,Outpatient,21,2,0.0952,719.66,489.38,11.6
+Internal Medicine,Private,IL,Emergency,16,4,0.25,690.74,560.75,11.4
+Internal Medicine,Private,IL,Inpatient,21,1,0.0476,457.45,389.02,14.3
+Internal Medicine,Private,IL,Outpatient,14,2,0.1429,461.83,382.44,14.9
+Internal Medicine,Private,NY,Emergency,17,2,0.1176,622.95,495.33,10.7
+Internal Medicine,Private,NY,Inpatient,22,3,0.1364,569.83,460.02,15.6
+Internal Medicine,Private,NY,Outpatient,18,1,0.0556,560.48,434.79,15.1
+Internal Medicine,Private,OH,Emergency,26,3,0.1154,540.71,426.65,16.6
+Internal Medicine,Private,OH,Inpatient,15,4,0.2667,492.89,344.37,14.1
+Internal Medicine,Private,OH,Outpatient,20,1,0.05,523.1,438.16,14.0
+Internal Medicine,Private,PA,Emergency,30,4,0.1333,554.89,440.19,14.0
+Internal Medicine,Private,PA,Inpatient,21,2,0.0952,455.71,381.31,15.9
+Internal Medicine,Private,PA,Outpatient,21,3,0.1429,473.35,392.72,14.8
+Internal Medicine,Private,TX,Emergency,20,1,0.05,802.99,632.8,16.4
+Internal Medicine,Private,TX,Inpatient,23,2,0.087,662.01,566.62,15.6
+Internal Medicine,Private,TX,Outpatient,24,3,0.125,558.75,453.52,13.8
+Internal Medicine,Self-Pay,CA,Emergency,15,0,0.0,581.88,505.86,15.6
+Internal Medicine,Self-Pay,CA,Inpatient,15,2,0.1333,508.79,448.32,12.9
+Internal Medicine,Self-Pay,CA,Outpatient,20,0,0.0,514.15,454.08,18.1
+Internal Medicine,Self-Pay,FL,Emergency,23,2,0.087,592.33,492.19,12.3
+Internal Medicine,Self-Pay,FL,Inpatient,23,1,0.0435,770.56,666.56,16.8
+Internal Medicine,Self-Pay,FL,Outpatient,19,0,0.0,558.69,488.1,16.8
+Internal Medicine,Self-Pay,GA,Emergency,23,4,0.1739,577.57,447.36,12.0
+Internal Medicine,Self-Pay,GA,Inpatient,19,2,0.1053,804.87,677.86,13.2
+Internal Medicine,Self-Pay,GA,Outpatient,22,1,0.0455,547.12,472.37,14.0
+Internal Medicine,Self-Pay,IL,Emergency,17,3,0.1765,761.83,536.66,14.2
+Internal Medicine,Self-Pay,IL,Inpatient,21,2,0.0952,488.37,399.84,12.2
+Internal Medicine,Self-Pay,IL,Outpatient,21,1,0.0476,439.87,377.68,16.1
+Internal Medicine,Self-Pay,NY,Emergency,29,1,0.0345,567.89,496.52,15.2
+Internal Medicine,Self-Pay,NY,Inpatient,17,0,0.0,532.61,464.68,16.9
+Internal Medicine,Self-Pay,NY,Outpatient,16,2,0.125,468.76,371.1,13.6
+Internal Medicine,Self-Pay,OH,Emergency,19,1,0.0526,641.05,566.51,15.3
+Internal Medicine,Self-Pay,OH,Inpatient,20,1,0.05,850.88,697.29,11.7
+Internal Medicine,Self-Pay,OH,Outpatient,20,1,0.05,614.43,555.57,17.0
+Internal Medicine,Self-Pay,PA,Emergency,17,3,0.1765,484.61,398.61,16.7
+Internal Medicine,Self-Pay,PA,Inpatient,24,2,0.0833,646.4,555.74,14.8
+Internal Medicine,Self-Pay,PA,Outpatient,21,1,0.0476,521.19,425.46,14.2
+Internal Medicine,Self-Pay,TX,Emergency,18,1,0.0556,474.92,415.17,14.3
+Internal Medicine,Self-Pay,TX,Inpatient,20,1,0.05,634.41,562.15,12.2
+Internal Medicine,Self-Pay,TX,Outpatient,28,3,0.1071,742.9,649.14,14.8
+Internal Medicine,Unknown,CA,Emergency,4,1,0.25,359.56,271.12,14.5
+Internal Medicine,Unknown,CA,Inpatient,3,0,0.0,882.98,708.47,10.7
+Internal Medicine,Unknown,CA,Outpatient,3,1,0.3333,854.85,676.26,11.0
+Internal Medicine,Unknown,FL,Emergency,3,0,0.0,571.41,454.05,17.3
+Internal Medicine,Unknown,FL,Inpatient,3,0,0.0,350.12,305.19,24.0
+Internal Medicine,Unknown,FL,Outpatient,1,0,0.0,317.05,283.27,13.0
+Internal Medicine,Unknown,GA,Emergency,6,0,0.0,561.48,471.33,20.7
+Internal Medicine,Unknown,GA,Inpatient,3,0,0.0,407.97,331.3,18.0
+Internal Medicine,Unknown,GA,Outpatient,3,1,0.3333,666.87,523.8,5.7
+Internal Medicine,Unknown,IL,Emergency,3,0,0.0,471.44,408.17,19.0
+Internal Medicine,Unknown,IL,Outpatient,2,1,0.5,478.49,308.38,4.0
+Internal Medicine,Unknown,NY,Emergency,4,0,0.0,508.66,445.73,12.5
+Internal Medicine,Unknown,NY,Inpatient,2,0,0.0,545.47,467.81,3.5
+Internal Medicine,Unknown,NY,Outpatient,1,0,0.0,854.7,769.68,6.0
+Internal Medicine,Unknown,OH,Emergency,4,2,0.5,818.51,616.84,9.5
+Internal Medicine,Unknown,OH,Inpatient,1,0,0.0,591.57,580.38,24.0
+Internal Medicine,Unknown,OH,Outpatient,2,0,0.0,380.62,307.8,26.0
+Internal Medicine,Unknown,PA,Emergency,5,0,0.0,836.1,690.02,19.8
+Internal Medicine,Unknown,PA,Inpatient,7,0,0.0,512.8,474.71,17.0
+Internal Medicine,Unknown,PA,Outpatient,4,0,0.0,560.69,512.85,18.5
+Internal Medicine,Unknown,TX,Emergency,5,0,0.0,562.18,491.94,15.0
+Internal Medicine,Unknown,TX,Inpatient,4,0,0.0,438.87,351.52,19.2
+Internal Medicine,Unknown,TX,Outpatient,4,0,0.0,356.44,319.18,13.0
+Neurology,Medicaid,CA,Emergency,13,0,0.0,592.47,509.32,17.5
+Neurology,Medicaid,CA,Inpatient,13,1,0.0769,623.47,515.71,17.1
+Neurology,Medicaid,CA,Outpatient,21,3,0.1429,786.37,603.19,14.3
+Neurology,Medicaid,FL,Emergency,26,2,0.0769,438.8,364.65,15.6
+Neurology,Medicaid,FL,Inpatient,14,2,0.1429,486.38,391.61,12.4
+Neurology,Medicaid,FL,Outpatient,11,0,0.0,677.79,579.31,13.2
+Neurology,Medicaid,GA,Emergency,15,3,0.2,565.25,456.14,11.6
+Neurology,Medicaid,GA,Inpatient,13,1,0.0769,577.48,515.84,14.2
+Neurology,Medicaid,GA,Outpatient,16,1,0.0625,524.06,438.5,14.1
+Neurology,Medicaid,IL,Emergency,15,2,0.1333,485.0,404.83,16.2
+Neurology,Medicaid,IL,Inpatient,10,1,0.1,445.1,352.22,9.6
+Neurology,Medicaid,IL,Outpatient,16,1,0.0625,522.31,436.53,13.2
+Neurology,Medicaid,NY,Emergency,12,0,0.0,455.83,401.94,13.8
+Neurology,Medicaid,NY,Inpatient,11,0,0.0,443.0,408.17,14.3
+Neurology,Medicaid,NY,Outpatient,28,2,0.0714,693.36,577.02,15.8
+Neurology,Medicaid,OH,Emergency,16,4,0.25,742.74,561.9,10.4
+Neurology,Medicaid,OH,Inpatient,18,1,0.0556,533.98,429.73,14.7
+Neurology,Medicaid,OH,Outpatient,15,2,0.1333,688.81,571.74,14.0
+Neurology,Medicaid,PA,Emergency,20,0,0.0,457.63,397.67,18.3
+Neurology,Medicaid,PA,Inpatient,11,1,0.0909,624.09,514.21,14.5
+Neurology,Medicaid,PA,Outpatient,17,0,0.0,586.73,522.25,15.1
+Neurology,Medicaid,TX,Emergency,19,2,0.1053,628.32,522.47,16.1
+Neurology,Medicaid,TX,Inpatient,12,1,0.0833,456.78,369.1,12.2
+Neurology,Medicaid,TX,Outpatient,19,4,0.2105,680.81,530.6,10.4
+Neurology,Medicare,CA,Emergency,13,0,0.0,762.67,680.28,14.6
+Neurology,Medicare,CA,Inpatient,10,0,0.0,674.37,578.17,10.0
+Neurology,Medicare,CA,Outpatient,10,1,0.1,520.04,432.81,8.4
+Neurology,Medicare,FL,Emergency,23,3,0.1304,644.33,546.84,14.9
+Neurology,Medicare,FL,Inpatient,14,0,0.0,487.59,431.53,16.4
+Neurology,Medicare,FL,Outpatient,25,1,0.04,437.59,375.55,15.6
+Neurology,Medicare,GA,Emergency,12,0,0.0,441.89,394.16,19.5
+Neurology,Medicare,GA,Inpatient,19,1,0.0526,411.38,347.01,16.1
+Neurology,Medicare,GA,Outpatient,10,1,0.1,558.98,475.11,14.4
+Neurology,Medicare,IL,Emergency,13,1,0.0769,420.91,361.42,13.2
+Neurology,Medicare,IL,Inpatient,28,3,0.1071,568.25,464.53,13.1
+Neurology,Medicare,IL,Outpatient,12,1,0.0833,676.12,593.48,12.9
+Neurology,Medicare,NY,Emergency,17,1,0.0588,596.73,499.4,11.9
+Neurology,Medicare,NY,Inpatient,14,1,0.0714,318.02,272.05,12.6
+Neurology,Medicare,NY,Outpatient,20,1,0.05,495.74,426.75,14.8
+Neurology,Medicare,OH,Emergency,18,1,0.0556,563.88,467.99,12.1
+Neurology,Medicare,OH,Inpatient,11,1,0.0909,511.79,452.4,9.5
+Neurology,Medicare,OH,Outpatient,20,1,0.05,518.16,435.34,15.2
+Neurology,Medicare,PA,Emergency,16,1,0.0625,587.06,514.74,18.3
+Neurology,Medicare,PA,Inpatient,14,0,0.0,480.86,416.53,12.1
+Neurology,Medicare,PA,Outpatient,15,1,0.0667,712.01,557.83,13.4
+Neurology,Medicare,TX,Emergency,15,1,0.0667,615.89,534.77,13.5
+Neurology,Medicare,TX,Inpatient,12,0,0.0,584.79,522.84,12.1
+Neurology,Medicare,TX,Outpatient,14,2,0.1429,608.75,482.72,19.3
+Neurology,Private,CA,Emergency,21,1,0.0476,483.84,428.99,16.5
+Neurology,Private,CA,Inpatient,14,1,0.0714,620.38,517.17,15.8
+Neurology,Private,CA,Outpatient,20,2,0.1,546.8,460.93,11.7
+Neurology,Private,FL,Emergency,16,1,0.0625,511.76,448.59,16.4
+Neurology,Private,FL,Inpatient,11,1,0.0909,637.56,537.18,15.5
+Neurology,Private,FL,Outpatient,18,3,0.1667,651.18,495.68,13.3
+Neurology,Private,GA,Emergency,9,0,0.0,397.93,351.49,13.3
+Neurology,Private,GA,Inpatient,7,0,0.0,404.47,349.44,20.1
+Neurology,Private,GA,Outpatient,12,1,0.0833,711.02,563.8,11.8
+Neurology,Private,IL,Emergency,12,0,0.0,645.53,574.23,14.8
+Neurology,Private,IL,Inpatient,15,1,0.0667,518.88,430.07,16.1
+Neurology,Private,IL,Outpatient,19,1,0.0526,485.37,404.06,15.7
+Neurology,Private,NY,Emergency,22,1,0.0455,412.1,346.4,14.3
+Neurology,Private,NY,Inpatient,9,0,0.0,345.09,297.53,17.3
+Neurology,Private,NY,Outpatient,15,1,0.0667,560.25,464.48,10.4
+Neurology,Private,OH,Emergency,8,0,0.0,438.02,373.26,14.9
+Neurology,Private,OH,Inpatient,15,2,0.1333,532.55,453.06,11.7
+Neurology,Private,OH,Outpatient,10,1,0.1,595.56,528.86,11.1
+Neurology,Private,PA,Emergency,10,1,0.1,689.63,580.34,12.0
+Neurology,Private,PA,Inpatient,12,0,0.0,445.2,408.9,17.0
+Neurology,Private,PA,Outpatient,18,3,0.1667,694.14,495.12,15.1
+Neurology,Private,TX,Emergency,6,0,0.0,466.9,433.54,11.2
+Neurology,Private,TX,Inpatient,13,0,0.0,641.57,561.86,16.1
+Neurology,Private,TX,Outpatient,14,0,0.0,650.68,600.3,17.4
+Neurology,Self-Pay,CA,Emergency,23,1,0.0435,477.87,409.61,14.7
+Neurology,Self-Pay,CA,Inpatient,11,1,0.0909,757.07,571.03,11.6
+Neurology,Self-Pay,CA,Outpatient,11,1,0.0909,295.63,240.38,19.8
+Neurology,Self-Pay,FL,Emergency,18,4,0.2222,524.65,410.02,11.6
+Neurology,Self-Pay,FL,Inpatient,11,0,0.0,414.7,362.12,19.4
+Neurology,Self-Pay,FL,Outpatient,16,2,0.125,647.29,537.6,16.4
+Neurology,Self-Pay,GA,Emergency,13,1,0.0769,560.77,493.91,16.8
+Neurology,Self-Pay,GA,Inpatient,19,1,0.0526,550.01,468.54,15.3
+Neurology,Self-Pay,GA,Outpatient,15,1,0.0667,645.45,510.46,16.6
+Neurology,Self-Pay,IL,Emergency,16,2,0.125,704.74,539.24,14.0
+Neurology,Self-Pay,IL,Inpatient,13,1,0.0769,463.67,409.9,13.9
+Neurology,Self-Pay,IL,Outpatient,15,0,0.0,432.83,365.37,16.7
+Neurology,Self-Pay,NY,Emergency,16,1,0.0625,529.31,447.54,16.3
+Neurology,Self-Pay,NY,Inpatient,16,1,0.0625,557.26,467.44,11.6
+Neurology,Self-Pay,NY,Outpatient,16,0,0.0,676.82,615.73,16.1
+Neurology,Self-Pay,OH,Emergency,19,1,0.0526,375.62,317.61,15.2
+Neurology,Self-Pay,OH,Inpatient,13,0,0.0,453.71,400.54,18.5
+Neurology,Self-Pay,OH,Outpatient,15,2,0.1333,620.85,444.99,12.2
+Neurology,Self-Pay,PA,Emergency,15,1,0.0667,483.65,410.59,13.7
+Neurology,Self-Pay,PA,Inpatient,10,1,0.1,715.27,582.95,13.7
+Neurology,Self-Pay,PA,Outpatient,21,1,0.0476,494.18,423.55,16.0
+Neurology,Self-Pay,TX,Emergency,23,2,0.087,453.89,403.2,16.2
+Neurology,Self-Pay,TX,Inpatient,22,1,0.0455,776.97,673.69,14.5
+Neurology,Self-Pay,TX,Outpatient,10,0,0.0,531.05,452.57,17.5
+Neurology,Unknown,CA,Emergency,5,0,0.0,481.84,412.55,16.8
+Neurology,Unknown,CA,Outpatient,4,0,0.0,757.36,649.44,21.2
+Neurology,Unknown,FL,Emergency,4,0,0.0,343.39,311.85,15.2
+Neurology,Unknown,FL,Inpatient,4,0,0.0,947.38,776.3,18.8
+Neurology,Unknown,FL,Outpatient,3,0,0.0,1223.59,962.81,17.0
+Neurology,Unknown,GA,Emergency,1,0,0.0,1832.8,1582.7,15.0
+Neurology,Unknown,GA,Inpatient,3,1,0.3333,748.61,425.49,7.0
+Neurology,Unknown,IL,Emergency,2,1,0.5,504.93,305.37,14.5
+Neurology,Unknown,IL,Inpatient,1,0,0.0,970.73,950.88,9.0
+Neurology,Unknown,IL,Outpatient,1,0,0.0,320.77,258.9,21.0
+Neurology,Unknown,NY,Emergency,3,0,0.0,759.76,683.61,5.0
+Neurology,Unknown,NY,Inpatient,1,0,0.0,442.75,337.62,26.0
+Neurology,Unknown,NY,Outpatient,2,0,0.0,240.59,205.82,7.0
+Neurology,Unknown,OH,Emergency,2,0,0.0,867.76,768.33,13.5
+Neurology,Unknown,OH,Inpatient,3,0,0.0,588.01,487.28,18.3
+Neurology,Unknown,OH,Outpatient,3,0,0.0,396.34,351.96,10.0
+Neurology,Unknown,PA,Emergency,2,0,0.0,601.91,554.21,13.0
+Neurology,Unknown,PA,Inpatient,2,0,0.0,477.83,392.98,16.0
+Neurology,Unknown,PA,Outpatient,3,0,0.0,319.38,258.0,7.3
+Neurology,Unknown,TX,Emergency,3,0,0.0,705.24,645.91,13.0
+Neurology,Unknown,TX,Inpatient,4,0,0.0,421.12,382.06,17.8
+Neurology,Unknown,TX,Outpatient,1,0,0.0,240.35,189.73,20.0
+Orthopedics,Medicaid,CA,Emergency,19,0,0.0,391.3,339.85,13.2
+Orthopedics,Medicaid,CA,Inpatient,15,1,0.0667,567.71,461.25,17.5
+Orthopedics,Medicaid,CA,Outpatient,16,1,0.0625,442.08,367.35,16.7
+Orthopedics,Medicaid,FL,Emergency,14,0,0.0,564.12,492.67,17.5
+Orthopedics,Medicaid,FL,Inpatient,18,4,0.2222,545.82,443.58,12.2
+Orthopedics,Medicaid,FL,Outpatient,15,2,0.1333,535.08,456.09,11.1
+Orthopedics,Medicaid,GA,Emergency,18,1,0.0556,691.37,595.4,13.7
+Orthopedics,Medicaid,GA,Inpatient,14,2,0.1429,582.44,493.57,14.1
+Orthopedics,Medicaid,GA,Outpatient,16,0,0.0,646.21,571.35,14.2
+Orthopedics,Medicaid,IL,Emergency,15,2,0.1333,610.47,508.22,15.1
+Orthopedics,Medicaid,IL,Inpatient,15,2,0.1333,672.28,574.45,16.3
+Orthopedics,Medicaid,IL,Outpatient,18,1,0.0556,573.72,516.26,12.1
+Orthopedics,Medicaid,NY,Emergency,9,0,0.0,712.85,606.55,19.4
+Orthopedics,Medicaid,NY,Inpatient,12,0,0.0,477.9,424.7,13.1
+Orthopedics,Medicaid,NY,Outpatient,16,2,0.125,612.53,501.13,12.8
+Orthopedics,Medicaid,OH,Emergency,15,2,0.1333,530.52,397.38,11.6
+Orthopedics,Medicaid,OH,Inpatient,18,0,0.0,395.29,349.17,13.9
+Orthopedics,Medicaid,OH,Outpatient,13,1,0.0769,598.85,491.54,13.5
+Orthopedics,Medicaid,PA,Emergency,14,0,0.0,410.47,365.78,11.9
+Orthopedics,Medicaid,PA,Inpatient,18,2,0.1111,576.31,437.57,13.3
+Orthopedics,Medicaid,PA,Outpatient,22,4,0.1818,506.88,380.73,15.1
+Orthopedics,Medicaid,TX,Emergency,20,0,0.0,657.84,569.75,18.0
+Orthopedics,Medicaid,TX,Inpatient,18,0,0.0,548.77,489.8,14.4
+Orthopedics,Medicaid,TX,Outpatient,14,1,0.0714,601.71,470.62,15.9
+Orthopedics,Medicare,CA,Emergency,16,2,0.125,485.47,372.31,17.4
+Orthopedics,Medicare,CA,Inpatient,20,2,0.1,478.52,410.61,14.9
+Orthopedics,Medicare,CA,Outpatient,24,1,0.0417,645.83,554.42,12.8
+Orthopedics,Medicare,FL,Emergency,18,1,0.0556,576.85,437.49,15.9
+Orthopedics,Medicare,FL,Inpatient,15,1,0.0667,620.71,522.8,12.9
+Orthopedics,Medicare,FL,Outpatient,17,1,0.0588,756.28,658.63,13.5
+Orthopedics,Medicare,GA,Emergency,20,0,0.0,379.47,329.25,20.0
+Orthopedics,Medicare,GA,Inpatient,19,2,0.1053,503.42,412.78,14.3
+Orthopedics,Medicare,GA,Outpatient,19,4,0.2105,765.59,621.13,14.8
+Orthopedics,Medicare,IL,Emergency,15,0,0.0,631.23,557.76,13.3
+Orthopedics,Medicare,IL,Inpatient,19,6,0.3158,804.68,595.82,13.4
+Orthopedics,Medicare,IL,Outpatient,21,0,0.0,439.44,374.88,14.5
+Orthopedics,Medicare,NY,Emergency,15,3,0.2,486.69,387.0,14.7
+Orthopedics,Medicare,NY,Inpatient,11,1,0.0909,705.5,604.38,9.7
+Orthopedics,Medicare,NY,Outpatient,15,1,0.0667,525.71,448.21,13.9
+Orthopedics,Medicare,OH,Emergency,17,2,0.1176,534.82,457.07,12.2
+Orthopedics,Medicare,OH,Inpatient,20,0,0.0,527.85,451.42,16.4
+Orthopedics,Medicare,OH,Outpatient,22,3,0.1364,568.44,443.83,11.0
+Orthopedics,Medicare,PA,Emergency,16,0,0.0,631.12,566.51,13.1
+Orthopedics,Medicare,PA,Inpatient,17,0,0.0,523.27,464.13,14.8
+Orthopedics,Medicare,PA,Outpatient,18,0,0.0,552.69,474.28,16.4
+Orthopedics,Medicare,TX,Emergency,14,3,0.2143,884.75,645.72,13.9
+Orthopedics,Medicare,TX,Inpatient,21,2,0.0952,536.88,435.65,17.2
+Orthopedics,Medicare,TX,Outpatient,21,2,0.0952,516.23,411.41,14.7
+Orthopedics,Private,CA,Emergency,19,3,0.1579,450.1,363.01,10.5
+Orthopedics,Private,CA,Inpatient,13,1,0.0769,601.78,508.74,13.6
+Orthopedics,Private,CA,Outpatient,9,2,0.2222,676.16,515.23,14.8
+Orthopedics,Private,FL,Emergency,12,0,0.0,481.21,424.03,19.8
+Orthopedics,Private,FL,Inpatient,17,1,0.0588,513.1,438.71,13.1
+Orthopedics,Private,FL,Outpatient,10,1,0.1,595.2,479.64,12.2
+Orthopedics,Private,GA,Emergency,17,1,0.0588,600.4,532.43,16.8
+Orthopedics,Private,GA,Inpatient,17,2,0.1176,786.26,639.19,11.6
+Orthopedics,Private,GA,Outpatient,25,1,0.04,409.68,344.77,14.8
+Orthopedics,Private,IL,Emergency,21,2,0.0952,496.13,415.89,13.1
+Orthopedics,Private,IL,Inpatient,14,2,0.1429,681.07,506.08,13.4
+Orthopedics,Private,IL,Outpatient,23,3,0.1304,525.39,428.77,15.9
+Orthopedics,Private,NY,Emergency,10,1,0.1,634.5,506.8,12.4
+Orthopedics,Private,NY,Inpatient,19,0,0.0,636.06,548.06,15.7
+Orthopedics,Private,NY,Outpatient,9,2,0.2222,929.91,673.68,12.3
+Orthopedics,Private,OH,Emergency,24,0,0.0,472.02,415.18,15.7
+Orthopedics,Private,OH,Inpatient,10,1,0.1,648.09,498.59,18.2
+Orthopedics,Private,OH,Outpatient,17,1,0.0588,405.02,341.79,13.1
+Orthopedics,Private,PA,Emergency,24,2,0.0833,526.18,445.61,15.9
+Orthopedics,Private,PA,Inpatient,20,0,0.0,465.25,417.32,11.7
+Orthopedics,Private,PA,Outpatient,13,1,0.0769,549.46,413.44,14.2
+Orthopedics,Private,TX,Emergency,15,1,0.0667,754.6,670.97,18.3
+Orthopedics,Private,TX,Inpatient,22,2,0.0909,566.03,453.81,15.4
+Orthopedics,Private,TX,Outpatient,12,0,0.0,641.57,587.37,16.0
+Orthopedics,Self-Pay,CA,Emergency,15,1,0.0667,761.03,671.64,17.1
+Orthopedics,Self-Pay,CA,Inpatient,14,0,0.0,347.49,309.04,15.4
+Orthopedics,Self-Pay,CA,Outpatient,18,2,0.1111,542.64,460.78,15.9
+Orthopedics,Self-Pay,FL,Emergency,12,1,0.0833,579.78,482.36,13.2
+Orthopedics,Self-Pay,FL,Inpatient,15,3,0.2,591.85,462.65,12.8
+Orthopedics,Self-Pay,FL,Outpatient,12,1,0.0833,521.81,422.54,17.4
+Orthopedics,Self-Pay,GA,Emergency,12,1,0.0833,684.08,590.81,12.0
+Orthopedics,Self-Pay,GA,Inpatient,13,1,0.0769,641.89,543.99,12.5
+Orthopedics,Self-Pay,GA,Outpatient,16,2,0.125,535.04,465.57,17.9
+Orthopedics,Self-Pay,IL,Emergency,12,1,0.0833,497.49,411.26,14.2
+Orthopedics,Self-Pay,IL,Inpatient,12,0,0.0,556.49,506.83,15.6
+Orthopedics,Self-Pay,IL,Outpatient,19,3,0.1579,621.5,487.02,11.4
+Orthopedics,Self-Pay,NY,Emergency,13,0,0.0,488.98,449.59,18.2
+Orthopedics,Self-Pay,NY,Inpatient,12,0,0.0,419.32,383.28,17.3
+Orthopedics,Self-Pay,NY,Outpatient,10,1,0.1,573.15,467.92,15.2
+Orthopedics,Self-Pay,OH,Emergency,16,1,0.0625,846.08,726.04,10.9
+Orthopedics,Self-Pay,OH,Inpatient,16,2,0.125,495.46,420.21,11.6
+Orthopedics,Self-Pay,OH,Outpatient,19,2,0.1053,540.13,431.78,13.6
+Orthopedics,Self-Pay,PA,Emergency,19,5,0.2632,812.73,599.61,12.5
+Orthopedics,Self-Pay,PA,Inpatient,18,3,0.1667,546.01,437.09,12.3
+Orthopedics,Self-Pay,PA,Outpatient,15,2,0.1333,714.28,552.92,14.0
+Orthopedics,Self-Pay,TX,Emergency,18,1,0.0556,601.92,520.02,13.3
+Orthopedics,Self-Pay,TX,Inpatient,12,1,0.0833,507.97,433.43,15.8
+Orthopedics,Self-Pay,TX,Outpatient,17,2,0.1176,699.22,612.99,13.8
+Orthopedics,Unknown,CA,Emergency,4,0,0.0,254.96,222.05,20.2
+Orthopedics,Unknown,CA,Inpatient,2,0,0.0,1052.34,969.54,20.5
+Orthopedics,Unknown,CA,Outpatient,1,0,0.0,191.44,169.03,17.0
+Orthopedics,Unknown,FL,Emergency,2,0,0.0,786.76,722.42,7.5
+Orthopedics,Unknown,FL,Inpatient,2,1,0.5,1269.66,847.16,10.5
+Orthopedics,Unknown,FL,Outpatient,6,2,0.3333,443.95,308.07,13.0
+Orthopedics,Unknown,GA,Emergency,3,0,0.0,350.81,313.52,20.7
+Orthopedics,Unknown,GA,Inpatient,3,1,0.3333,1080.36,630.37,13.3
+Orthopedics,Unknown,GA,Outpatient,1,0,0.0,449.35,340.28,28.0
+Orthopedics,Unknown,IL,Emergency,4,0,0.0,438.72,389.8,22.0
+Orthopedics,Unknown,IL,Inpatient,1,0,0.0,1160.23,981.02,16.0
+Orthopedics,Unknown,IL,Outpatient,1,0,0.0,298.12,296.15,20.0
+Orthopedics,Unknown,NY,Emergency,1,0,0.0,808.73,680.01,12.0
+Orthopedics,Unknown,NY,Outpatient,5,0,0.0,424.06,376.0,15.0
+Orthopedics,Unknown,OH,Inpatient,2,1,0.5,313.92,193.14,15.0
+Orthopedics,Unknown,OH,Outpatient,1,0,0.0,1130.05,1121.46,14.0
+Orthopedics,Unknown,PA,Emergency,2,0,0.0,878.86,812.2,11.0
+Orthopedics,Unknown,PA,Inpatient,6,0,0.0,450.01,408.74,18.8
+Orthopedics,Unknown,PA,Outpatient,5,1,0.2,470.96,348.67,17.6
+Orthopedics,Unknown,TX,Emergency,1,0,0.0,508.47,388.15,25.0
+Orthopedics,Unknown,TX,Inpatient,3,1,0.3333,684.64,564.38,10.0
+Orthopedics,Unknown,TX,Outpatient,1,0,0.0,429.99,355.28,23.0
+Pulmonology,Medicaid,CA,Emergency,10,0,0.0,648.19,607.19,17.1
+Pulmonology,Medicaid,CA,Inpatient,11,0,0.0,408.38,357.36,17.5
+Pulmonology,Medicaid,CA,Outpatient,14,1,0.0714,694.65,581.73,16.8
+Pulmonology,Medicaid,FL,Emergency,9,0,0.0,670.95,622.56,15.1
+Pulmonology,Medicaid,FL,Inpatient,11,0,0.0,299.61,255.48,19.1
+Pulmonology,Medicaid,FL,Outpatient,16,3,0.1875,577.29,440.17,13.5
+Pulmonology,Medicaid,GA,Emergency,13,1,0.0769,370.51,293.58,12.8
+Pulmonology,Medicaid,GA,Inpatient,13,1,0.0769,581.28,492.59,10.8
+Pulmonology,Medicaid,GA,Outpatient,16,0,0.0,589.69,511.7,12.6
+Pulmonology,Medicaid,IL,Emergency,18,2,0.1111,556.02,450.16,14.6
+Pulmonology,Medicaid,IL,Inpatient,15,2,0.1333,496.03,394.19,13.3
+Pulmonology,Medicaid,IL,Outpatient,13,2,0.1538,609.53,468.47,14.5
+Pulmonology,Medicaid,NY,Emergency,12,1,0.0833,416.47,319.95,14.6
+Pulmonology,Medicaid,NY,Inpatient,15,3,0.2,702.76,565.04,15.3
+Pulmonology,Medicaid,NY,Outpatient,14,0,0.0,549.98,488.89,12.2
+Pulmonology,Medicaid,OH,Emergency,10,0,0.0,647.81,574.1,17.8
+Pulmonology,Medicaid,OH,Inpatient,17,0,0.0,514.11,449.32,13.4
+Pulmonology,Medicaid,OH,Outpatient,15,0,0.0,444.21,390.24,13.9
+Pulmonology,Medicaid,PA,Emergency,13,1,0.0769,497.4,420.93,14.0
+Pulmonology,Medicaid,PA,Inpatient,16,1,0.0625,550.77,464.8,14.9
+Pulmonology,Medicaid,PA,Outpatient,12,2,0.1667,500.49,438.83,9.5
+Pulmonology,Medicaid,TX,Emergency,7,1,0.1429,776.77,673.06,18.4
+Pulmonology,Medicaid,TX,Inpatient,15,2,0.1333,601.5,476.88,14.2
+Pulmonology,Medicaid,TX,Outpatient,10,0,0.0,370.74,327.99,14.0
+Pulmonology,Medicare,CA,Emergency,20,2,0.1,567.28,471.53,15.0
+Pulmonology,Medicare,CA,Inpatient,11,2,0.1818,523.38,430.56,18.3
+Pulmonology,Medicare,CA,Outpatient,8,0,0.0,573.52,480.91,10.2
+Pulmonology,Medicare,FL,Emergency,14,2,0.1429,637.04,494.9,13.6
+Pulmonology,Medicare,FL,Inpatient,14,2,0.1429,562.49,495.64,13.9
+Pulmonology,Medicare,FL,Outpatient,14,2,0.1429,573.42,447.06,14.9
+Pulmonology,Medicare,GA,Emergency,13,0,0.0,754.73,672.53,19.5
+Pulmonology,Medicare,GA,Inpatient,7,0,0.0,569.33,476.25,18.1
+Pulmonology,Medicare,GA,Outpatient,17,0,0.0,465.03,396.6,14.2
+Pulmonology,Medicare,IL,Emergency,15,0,0.0,449.94,400.7,15.1
+Pulmonology,Medicare,IL,Inpatient,16,2,0.125,667.04,539.46,16.2
+Pulmonology,Medicare,IL,Outpatient,16,4,0.25,593.21,490.46,10.0
+Pulmonology,Medicare,NY,Emergency,15,1,0.0667,678.37,553.32,16.7
+Pulmonology,Medicare,NY,Inpatient,10,1,0.1,521.38,432.9,9.7
+Pulmonology,Medicare,NY,Outpatient,13,1,0.0769,512.03,442.5,16.6
+Pulmonology,Medicare,OH,Emergency,9,1,0.1111,649.24,486.27,17.9
+Pulmonology,Medicare,OH,Inpatient,7,0,0.0,453.68,380.49,11.0
+Pulmonology,Medicare,OH,Outpatient,9,2,0.2222,410.19,312.54,9.6
+Pulmonology,Medicare,PA,Emergency,12,0,0.0,489.25,439.23,13.3
+Pulmonology,Medicare,PA,Inpatient,14,0,0.0,538.0,477.77,19.4
+Pulmonology,Medicare,PA,Outpatient,12,1,0.0833,415.21,325.44,17.3
+Pulmonology,Medicare,TX,Emergency,11,2,0.1818,881.77,713.8,11.3
+Pulmonology,Medicare,TX,Inpatient,15,1,0.0667,633.28,495.52,13.1
+Pulmonology,Medicare,TX,Outpatient,14,0,0.0,361.48,312.71,17.2
+Pulmonology,Private,CA,Emergency,14,0,0.0,466.93,417.75,14.6
+Pulmonology,Private,CA,Inpatient,15,5,0.3333,895.66,601.37,10.1
+Pulmonology,Private,CA,Outpatient,11,0,0.0,501.92,442.74,12.3
+Pulmonology,Private,FL,Emergency,16,1,0.0625,474.69,409.25,8.6
+Pulmonology,Private,FL,Inpatient,10,1,0.1,604.52,510.53,15.3
+Pulmonology,Private,FL,Outpatient,11,0,0.0,441.87,381.27,16.5
+Pulmonology,Private,GA,Emergency,12,0,0.0,368.85,313.15,17.1
+Pulmonology,Private,GA,Inpatient,10,1,0.1,681.24,573.02,11.4
+Pulmonology,Private,GA,Outpatient,13,2,0.1538,726.9,581.02,14.5
+Pulmonology,Private,IL,Emergency,14,1,0.0714,713.7,594.15,14.4
+Pulmonology,Private,IL,Inpatient,8,1,0.125,530.05,466.0,17.4
+Pulmonology,Private,IL,Outpatient,13,1,0.0769,397.83,328.19,16.2
+Pulmonology,Private,NY,Emergency,16,1,0.0625,489.63,416.36,16.5
+Pulmonology,Private,NY,Inpatient,22,2,0.0909,609.37,465.7,13.0
+Pulmonology,Private,NY,Outpatient,9,0,0.0,510.8,429.28,17.8
+Pulmonology,Private,OH,Emergency,11,1,0.0909,559.33,457.23,13.9
+Pulmonology,Private,OH,Inpatient,8,0,0.0,682.62,583.08,19.5
+Pulmonology,Private,OH,Outpatient,18,1,0.0556,449.99,379.83,14.1
+Pulmonology,Private,PA,Emergency,12,0,0.0,644.46,548.65,15.5
+Pulmonology,Private,PA,Inpatient,14,1,0.0714,672.7,510.58,15.9
+Pulmonology,Private,PA,Outpatient,12,4,0.3333,452.4,305.67,7.5
+Pulmonology,Private,TX,Emergency,7,0,0.0,624.93,550.72,16.6
+Pulmonology,Private,TX,Inpatient,17,0,0.0,523.58,462.82,14.9
+Pulmonology,Private,TX,Outpatient,11,1,0.0909,528.74,425.27,12.7
+Pulmonology,Self-Pay,CA,Emergency,8,0,0.0,403.57,353.13,16.9
+Pulmonology,Self-Pay,CA,Inpatient,14,1,0.0714,752.87,601.53,18.2
+Pulmonology,Self-Pay,CA,Outpatient,11,1,0.0909,464.75,387.99,14.7
+Pulmonology,Self-Pay,FL,Emergency,13,0,0.0,456.2,396.71,15.8
+Pulmonology,Self-Pay,FL,Inpatient,14,0,0.0,414.6,367.0,15.5
+Pulmonology,Self-Pay,FL,Outpatient,11,0,0.0,608.87,544.07,12.5
+Pulmonology,Self-Pay,GA,Emergency,14,2,0.1429,844.73,614.17,14.2
+Pulmonology,Self-Pay,GA,Inpatient,10,0,0.0,397.2,332.51,10.8
+Pulmonology,Self-Pay,GA,Outpatient,17,3,0.1765,817.34,689.64,11.9
+Pulmonology,Self-Pay,IL,Emergency,7,0,0.0,488.87,450.44,18.0
+Pulmonology,Self-Pay,IL,Inpatient,10,0,0.0,581.78,528.04,19.4
+Pulmonology,Self-Pay,IL,Outpatient,10,1,0.1,508.62,421.86,13.3
+Pulmonology,Self-Pay,NY,Emergency,16,1,0.0625,576.17,482.12,10.8
+Pulmonology,Self-Pay,NY,Inpatient,13,3,0.2308,478.77,367.05,14.1
+Pulmonology,Self-Pay,NY,Outpatient,10,1,0.1,638.47,518.5,14.9
+Pulmonology,Self-Pay,OH,Emergency,20,1,0.05,425.92,360.58,15.9
+Pulmonology,Self-Pay,OH,Inpatient,12,3,0.25,585.18,419.7,15.4
+Pulmonology,Self-Pay,OH,Outpatient,16,0,0.0,489.59,419.61,16.6
+Pulmonology,Self-Pay,PA,Emergency,11,1,0.0909,705.88,522.04,15.1
+Pulmonology,Self-Pay,PA,Inpatient,14,1,0.0714,508.21,437.25,15.6
+Pulmonology,Self-Pay,PA,Outpatient,17,1,0.0588,708.75,592.84,15.9
+Pulmonology,Self-Pay,TX,Emergency,4,0,0.0,411.84,368.94,12.2
+Pulmonology,Self-Pay,TX,Inpatient,9,1,0.1111,737.99,494.86,13.6
+Pulmonology,Self-Pay,TX,Outpatient,7,3,0.4286,603.29,435.05,7.9
+Pulmonology,Unknown,CA,Emergency,2,0,0.0,277.76,238.85,5.5
+Pulmonology,Unknown,CA,Inpatient,1,0,0.0,1773.24,1553.54,7.0
+Pulmonology,Unknown,FL,Emergency,1,0,0.0,663.52,622.0,12.0
+Pulmonology,Unknown,FL,Inpatient,4,0,0.0,341.24,303.24,17.8
+Pulmonology,Unknown,FL,Outpatient,2,0,0.0,691.7,621.4,20.5
+Pulmonology,Unknown,GA,Emergency,3,0,0.0,487.51,418.87,11.0
+Pulmonology,Unknown,GA,Inpatient,3,0,0.0,248.4,205.75,20.3
+Pulmonology,Unknown,GA,Outpatient,1,0,0.0,430.55,382.33,3.0
+Pulmonology,Unknown,IL,Emergency,3,0,0.0,593.81,524.5,17.7
+Pulmonology,Unknown,IL,Inpatient,3,0,0.0,360.61,313.48,24.7
+Pulmonology,Unknown,IL,Outpatient,1,0,0.0,173.14,144.86,19.0
+Pulmonology,Unknown,NY,Outpatient,5,0,0.0,535.26,443.8,18.4
+Pulmonology,Unknown,OH,Emergency,1,0,0.0,154.22,151.97,8.0
+Pulmonology,Unknown,OH,Outpatient,2,1,0.5,756.87,333.6,6.5
+Pulmonology,Unknown,PA,Emergency,1,0,0.0,658.04,498.22,17.0
+Pulmonology,Unknown,PA,Inpatient,2,0,0.0,389.66,331.72,13.5
+Pulmonology,Unknown,PA,Outpatient,1,0,0.0,281.04,257.88,17.0
+Pulmonology,Unknown,TX,Emergency,2,0,0.0,353.16,301.19,15.0
+Pulmonology,Unknown,TX,Inpatient,3,0,0.0,246.31,225.58,8.3
+Pulmonology,Unknown,TX,Outpatient,1,0,0.0,195.36,179.53,8.0
+Unknown,Medicaid,CA,Emergency,3,0,0.0,614.22,547.92,17.3
+Unknown,Medicaid,CA,Inpatient,4,0,0.0,469.43,415.79,14.2
+Unknown,Medicaid,CA,Outpatient,6,0,0.0,526.79,439.55,20.3
+Unknown,Medicaid,FL,Emergency,4,0,0.0,803.39,726.81,12.0
+Unknown,Medicaid,FL,Inpatient,2,0,0.0,356.1,335.72,11.0
+Unknown,Medicaid,FL,Outpatient,2,0,0.0,1644.48,1485.72,26.5
+Unknown,Medicaid,GA,Emergency,2,0,0.0,430.94,382.4,18.0
+Unknown,Medicaid,GA,Inpatient,1,0,0.0,476.9,438.24,10.0
+Unknown,Medicaid,GA,Outpatient,3,0,0.0,235.95,215.24,13.7
+Unknown,Medicaid,IL,Emergency,5,0,0.0,488.82,408.57,15.8
+Unknown,Medicaid,IL,Inpatient,1,0,0.0,407.59,393.42,28.0
+Unknown,Medicaid,IL,Outpatient,3,0,0.0,707.95,587.75,19.0
+Unknown,Medicaid,NY,Emergency,2,0,0.0,491.82,453.64,11.5
+Unknown,Medicaid,NY,Inpatient,6,0,0.0,338.92,296.49,11.5
+Unknown,Medicaid,NY,Outpatient,1,0,0.0,492.15,474.49,26.0
+Unknown,Medicaid,OH,Emergency,6,1,0.1667,430.13,353.84,12.7
+Unknown,Medicaid,OH,Inpatient,3,1,0.3333,1135.57,656.54,12.0
+Unknown,Medicaid,OH,Outpatient,6,0,0.0,501.2,455.37,15.8
+Unknown,Medicaid,PA,Emergency,5,1,0.2,655.47,530.4,15.0
+Unknown,Medicaid,PA,Inpatient,2,1,0.5,518.81,349.28,14.5
+Unknown,Medicaid,PA,Outpatient,3,0,0.0,569.09,502.63,8.0
+Unknown,Medicaid,TX,Emergency,6,0,0.0,496.45,427.13,15.2
+Unknown,Medicaid,TX,Inpatient,3,0,0.0,524.18,465.06,10.0
+Unknown,Medicaid,TX,Outpatient,2,1,0.5,1579.28,1194.44,9.0
+Unknown,Medicare,CA,Emergency,4,1,0.25,762.23,572.01,9.5
+Unknown,Medicare,CA,Inpatient,2,0,0.0,417.31,349.42,8.5
+Unknown,Medicare,CA,Outpatient,7,0,0.0,489.36,431.82,16.9
+Unknown,Medicare,FL,Emergency,3,0,0.0,580.45,484.61,13.0
+Unknown,Medicare,FL,Inpatient,4,0,0.0,496.58,437.09,13.0
+Unknown,Medicare,FL,Outpatient,1,0,0.0,640.66,572.93,10.0
+Unknown,Medicare,GA,Emergency,4,0,0.0,651.83,583.58,3.2
+Unknown,Medicare,GA,Inpatient,6,1,0.1667,590.46,513.38,16.2
+Unknown,Medicare,GA,Outpatient,5,0,0.0,855.85,780.76,20.0
+Unknown,Medicare,IL,Emergency,3,0,0.0,598.82,479.06,11.7
+Unknown,Medicare,IL,Inpatient,2,0,0.0,277.7,247.97,19.0
+Unknown,Medicare,IL,Outpatient,2,0,0.0,469.52,363.07,15.5
+Unknown,Medicare,NY,Emergency,1,0,0.0,541.46,540.8,25.0
+Unknown,Medicare,NY,Inpatient,3,0,0.0,474.27,420.2,18.3
+Unknown,Medicare,NY,Outpatient,3,0,0.0,1303.77,1135.19,17.0
+Unknown,Medicare,OH,Emergency,5,0,0.0,1027.9,850.21,18.2
+Unknown,Medicare,OH,Inpatient,2,0,0.0,283.27,246.82,18.5
+Unknown,Medicare,OH,Outpatient,3,1,0.3333,779.05,577.23,13.0
+Unknown,Medicare,PA,Emergency,2,0,0.0,487.46,426.78,13.0
+Unknown,Medicare,PA,Inpatient,3,0,0.0,315.51,283.82,16.3
+Unknown,Medicare,PA,Outpatient,5,1,0.2,487.22,338.3,18.8
+Unknown,Medicare,TX,Emergency,3,1,0.3333,403.91,325.44,7.0
+Unknown,Medicare,TX,Inpatient,4,0,0.0,322.97,280.1,17.2
+Unknown,Private,CA,Emergency,5,0,0.0,311.66,260.56,18.4
+Unknown,Private,CA,Inpatient,3,0,0.0,820.33,663.53,22.0
+Unknown,Private,CA,Outpatient,1,0,0.0,798.3,700.41,16.0
+Unknown,Private,FL,Emergency,6,0,0.0,676.01,562.72,15.0
+Unknown,Private,FL,Inpatient,2,0,0.0,565.01,500.63,17.5
+Unknown,Private,FL,Outpatient,1,0,0.0,190.33,187.91,27.0
+Unknown,Private,GA,Emergency,3,0,0.0,525.03,428.17,15.7
+Unknown,Private,GA,Inpatient,3,1,0.3333,431.51,342.87,8.3
+Unknown,Private,IL,Emergency,8,1,0.125,464.84,409.16,13.8
+Unknown,Private,IL,Inpatient,3,0,0.0,524.6,443.14,16.0
+Unknown,Private,IL,Outpatient,2,0,0.0,472.04,405.31,22.0
+Unknown,Private,NY,Emergency,1,0,0.0,630.05,599.06,21.0
+Unknown,Private,NY,Inpatient,4,0,0.0,503.09,450.02,13.8
+Unknown,Private,NY,Outpatient,4,1,0.25,600.28,496.85,9.8
+Unknown,Private,OH,Emergency,1,0,0.0,1134.2,981.03,21.0
+Unknown,Private,OH,Inpatient,5,0,0.0,301.21,245.56,8.6
+Unknown,Private,OH,Outpatient,7,1,0.1429,685.79,533.31,13.4
+Unknown,Private,PA,Emergency,4,0,0.0,450.27,370.23,10.0
+Unknown,Private,PA,Inpatient,9,3,0.3333,565.51,377.15,13.6
+Unknown,Private,PA,Outpatient,6,0,0.0,525.21,457.61,15.3
+Unknown,Private,TX,Emergency,1,0,0.0,721.34,625.29,8.0
+Unknown,Private,TX,Inpatient,2,0,0.0,487.75,392.38,6.0
+Unknown,Private,TX,Outpatient,2,0,0.0,192.8,184.97,17.0
+Unknown,Self-Pay,CA,Emergency,2,0,0.0,1377.71,1362.46,19.0
+Unknown,Self-Pay,CA,Inpatient,5,0,0.0,346.98,295.41,15.2
+Unknown,Self-Pay,CA,Outpatient,4,1,0.25,764.25,679.47,14.5
+Unknown,Self-Pay,FL,Emergency,4,0,0.0,458.66,383.49,11.8
+Unknown,Self-Pay,FL,Inpatient,5,1,0.2,626.62,528.76,17.8
+Unknown,Self-Pay,FL,Outpatient,3,0,0.0,555.04,480.03,10.7
+Unknown,Self-Pay,GA,Emergency,5,1,0.2,486.59,372.7,18.4
+Unknown,Self-Pay,GA,Inpatient,2,0,0.0,443.2,415.69,12.0
+Unknown,Self-Pay,GA,Outpatient,3,0,0.0,395.43,347.47,13.3
+Unknown,Self-Pay,IL,Emergency,1,0,0.0,1406.68,1394.54,6.0
+Unknown,Self-Pay,IL,Inpatient,4,0,0.0,561.1,483.28,11.8
+Unknown,Self-Pay,IL,Outpatient,4,0,0.0,631.58,516.03,24.0
+Unknown,Self-Pay,NY,Emergency,4,0,0.0,483.81,439.03,13.0
+Unknown,Self-Pay,NY,Inpatient,6,0,0.0,378.85,361.31,15.8
+Unknown,Self-Pay,NY,Outpatient,8,0,0.0,474.26,409.97,16.4
+Unknown,Self-Pay,OH,Emergency,3,0,0.0,352.94,293.48,19.7
+Unknown,Self-Pay,OH,Inpatient,11,3,0.2727,657.59,460.0,11.2
+Unknown,Self-Pay,OH,Outpatient,1,0,0.0,701.06,699.21,9.0
+Unknown,Self-Pay,PA,Emergency,4,2,0.5,919.97,525.48,12.0
+Unknown,Self-Pay,PA,Inpatient,1,0,0.0,672.35,571.14,16.0
+Unknown,Self-Pay,PA,Outpatient,3,1,0.3333,1053.61,509.46,13.3
+Unknown,Self-Pay,TX,Emergency,2,0,0.0,330.05,249.3,18.0
+Unknown,Self-Pay,TX,Inpatient,6,0,0.0,520.22,459.1,12.8
+Unknown,Self-Pay,TX,Outpatient,3,0,0.0,705.68,598.35,13.7
+Unknown,Unknown,CA,Inpatient,2,0,0.0,242.89,210.34,25.5
+Unknown,Unknown,FL,Inpatient,2,0,0.0,452.09,425.01,13.5
+Unknown,Unknown,GA,Emergency,1,0,0.0,234.06,193.8,18.0
+Unknown,Unknown,GA,Outpatient,1,0,0.0,546.64,513.54,26.0
+Unknown,Unknown,NY,Emergency,1,1,1.0,1196.42,942.61,1.0
+Unknown,Unknown,NY,Inpatient,1,0,0.0,296.59,285.12,7.0
+Unknown,Unknown,NY,Outpatient,1,0,0.0,908.1,713.91,18.0
+Unknown,Unknown,PA,Emergency,2,2,1.0,747.86,264.14,5.5
+Unknown,Unknown,PA,Inpatient,1,0,0.0,640.86,504.85,15.0
+Unknown,Unknown,PA,Outpatient,2,0,0.0,476.96,407.14,20.0
+Unknown,Unknown,TX,Emergency,1,1,1.0,1077.38,598.79,5.0

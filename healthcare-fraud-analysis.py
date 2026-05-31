@@ -194,6 +194,16 @@ fraud_by_state = (
 
 fraud_by_state
 
+# %%
+# Fraud quarterly
+fraud_quarterly = (
+    fraud_by(["Year", "Quarter"])
+    .sort_values(["Year", "Quarter"], ascending=True)
+    .reset_index(drop=True)
+)
+
+fraud_quarterly
+
 
 # %% [markdown]
 # ## Visualisations
@@ -201,7 +211,7 @@ fraud_by_state
 # %%
 # Function for 'fraud rate by' chart
 def fraud_rate_by_chart(fraud_by_df, category_col, title):
-    plt.figure()
+    plt.figure(figsize=(12, 5))
     plt.barh(
         fraud_by_df[category_col],
         fraud_by_df["Fraud_Rate"] * 100,
@@ -240,7 +250,7 @@ fraud_rate_by_chart(
 
 # %%
 # Claims averages - fraud vs legitimate chart
-plt.figure()
+plt.figure(figsize=(10, 5))
 
 bar_colours = ["#2A9D8F", "#4C78A8"] 
 plt.bar(
@@ -269,7 +279,7 @@ plt.show()
 legit_days = df[df["Fraud_Label"] == "Legitimate"]["Days_Between_Service_and_Claim"]
 fraud_days = df[df["Fraud_Label"] == "Fraud"]["Days_Between_Service_and_Claim"]
 
-plt.figure()
+plt.figure(figsize=(12, 5))
 
 plt.boxplot(
     [legit_days, fraud_days],
@@ -290,3 +300,68 @@ plt.title("Days Between Service and Claim Submission", fontweight="bold")
 plt.tight_layout()
 plt.savefig("charts/submission_days.png")
 plt.show()
+
+# %%
+# Fraud quarterly chart
+fraud_quarterly["Period"] = (
+    fraud_quarterly["Year"].astype(str) 
+    + " " 
+    + fraud_quarterly["Quarter"]
+)
+
+plt.figure(figsize=(12, 5))
+
+plt.plot(
+    fraud_quarterly["Period"],
+    fraud_quarterly["Fraud_Rate"] * 100,
+    marker="o",
+    color="#2A9D8F",
+    linewidth=2,
+    markersize=5
+)
+plt.axhline(
+    fraud_rate * 100,
+    color="#6C757D",
+    linestyle="--",
+    label=f"Overall Avg ({fraud_rate:.2%})"
+)
+plt.ylabel("Fraud Rate (%)")
+plt.title("Fraud Rate by Quarter (2021–2025)", fontweight="bold")
+plt.legend()
+plt.xticks(rotation=45, ha="right")
+plt.tight_layout()
+plt.savefig("charts/fraud_trend.png")
+plt.show()
+
+# %% [markdown]
+# ## Summary Table
+
+# %%
+summary = (
+    df.groupby(
+        [
+            "Provider_Specialty",
+            "Insurance_Type",
+            "Patient_State",
+            "Visit_Type",
+        ]
+    )
+    .agg(
+        Total_Claims=("Is_Fraud", "count"),
+        Fraud_Cases=("Is_Fraud", "sum"),
+        Fraud_Rate=("Is_Fraud", "mean"),
+        Avg_Claim_Amount=("Claim_Amount", "mean"),
+        Avg_Approved_Amount=("Approved_Amount", "mean"),
+        Avg_Days_To_Submit=("Days_Between_Service_and_Claim", "mean"),
+    )
+    .reset_index()
+)
+
+summary["Fraud_Rate"] = summary["Fraud_Rate"].round(4)  
+summary["Avg_Claim_Amount"] = summary["Avg_Claim_Amount"].round(2)
+summary["Avg_Approved_Amount"] = summary["Avg_Approved_Amount"].round(2)
+summary["Avg_Days_To_Submit"] = summary["Avg_Days_To_Submit"].round(1)
+
+summary.to_csv("fraud_summary.csv", index=False)
+
+summary
