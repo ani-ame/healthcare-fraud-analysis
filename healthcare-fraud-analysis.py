@@ -263,3 +263,30 @@ plt.ylabel("Average Claim Amount ($)")
 plt.tight_layout()
 plt.savefig("charts/claim_amounts.png")
 plt.show()
+
+# %%
+# Days to submit - fraud vs legitimate chart
+legit_days = df[df["Fraud_Label"] == "Legitimate"]["Days_Between_Service_and_Claim"]
+fraud_days = df[df["Fraud_Label"] == "Fraud"]["Days_Between_Service_and_Claim"]
+
+plt.figure()
+
+plt.boxplot(
+    [legit_days, fraud_days],
+    tick_labels=["Legitimate", "Fraud"],
+    vert=False,
+    patch_artist=True,
+    boxprops=dict(
+        facecolor="#2A9D8F"
+    ),
+    medianprops=dict(
+        color="black",
+        linewidth=2
+    )
+)
+
+plt.xlabel("Days")
+plt.title("Days Between Service and Claim Submission", fontweight="bold")
+plt.tight_layout()
+plt.savefig("charts/submission_days.png")
+plt.show()
