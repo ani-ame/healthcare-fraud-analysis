@@ -115,12 +115,12 @@ df.head()
 
 # %%
 fraud_rate = df["Is_Fraud"].mean()
-avg_claims_count = df["Claim_Amount"].mean()
+avg_claim_count = df["Claim_Amount"].mean()
 
 
 # %%
 # Function to return fraud rate, fraud claims and claim count for a column.
-def fraud_by (column):
+def fraud_by(column):
     return (
         df.groupby(column)["Is_Fraud"]
             .agg(
@@ -185,6 +185,15 @@ claims_avgs = (
 
 claims_avgs
 
+# %%
+# Fraud by state
+fraud_by_state = (
+    fraud_by("Patient_State")
+    .sort_values("Fraud_Rate", ascending=False)
+)
+
+fraud_by_state
+
 
 # %% [markdown]
 # ## Visualisations
@@ -233,18 +242,18 @@ fraud_rate_by_chart(
 # Claims averages - fraud vs legitimate chart
 plt.figure()
 
-bar_colors = ["#2A9D8F", "#4C78A8"] 
+bar_colours = ["#2A9D8F", "#4C78A8"] 
 plt.bar(
     claims_avgs["Fraud_Label"],
     claims_avgs["Avg_Claim_Amount"],
-    color=bar_colors,
+    color=bar_colours,
     width=0.5
 )
 
 plt.axhline(
-    y=avg_claims_count,
+    y=avg_claim_count,
     linestyle="--",
-    label=f"Overall Avg Claim Amount ({avg_claims_count:.0f})",
+    label=f"Overall Avg Claim Amount ({avg_claim_count:.0f})",
     color="#6C757D"
 )
 
