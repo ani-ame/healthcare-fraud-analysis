@@ -265,7 +265,7 @@ fraud_rate_by_chart(
 
 # %%
 # Claims averages - fraud vs legitimate chart
-plt.figure(figsize=(10, 5))
+plt.figure(figsize=(12, 5))
 
 bar_colours = ["#2A9D8F", "#4C78A8"] 
 plt.bar(
