@@ -31,7 +31,6 @@
 # %%
 import pandas as pd
 import matplotlib.pyplot as plt
-import os
 
 pd.set_option('display.max_columns', None)
 
@@ -216,13 +215,9 @@ fraud_quarterly = (
 
 fraud_quarterly
 
+
 # %% [markdown]
 # ## Visualisations
-
-# %%
-# Create folder for charts generated
-os.makedirs("charts", exist_ok=True)
-
 
 # %%
 # Function for 'fraud rate by' chart
