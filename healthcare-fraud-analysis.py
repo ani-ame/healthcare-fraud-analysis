@@ -31,6 +31,7 @@
 # %%
 import pandas as pd
 import matplotlib.pyplot as plt
+import os
 
 pd.set_option('display.max_columns', None)
 
@@ -45,7 +46,7 @@ fraud_df = pd.read_csv("healthcare_fraud_detection.csv")
 
 # %%
 df = fraud_df
-print(f"Dataset loaded: {df.shape[0]:,} rows × {df.shape[1]} columns")
+print(f"Dataset loaded: {df.shape[0]:,} rows x {df.shape[1]} columns")
 df.head()
 
 # %%
@@ -183,7 +184,18 @@ claims_avgs = (
     })
 )
 
-claims_avgs
+display(claims_avgs)
+fraud_legit_cf1 = (
+    claims_avgs.loc[0, "Avg_Approved_Amt_Gap"] / claims_avgs.loc[1, "Avg_Approved_Amt_Gap"]
+) 
+
+fraud_legit_cf2 = (
+    (claims_avgs.loc[0, "Avg_Claim_Amount"] - claims_avgs.loc[1, "Avg_Claim_Amount"]) /
+    claims_avgs.loc[1, "Avg_Claim_Amount"]
+) 
+
+print(f"Fraudulent claims have an average approved amount gap {fraud_legit_cf1:.2f} times greater than legitimate claims.")
+print(f"Fraudulent claims have an average amount that is {fraud_legit_cf2:.2%} higher than legitimate claims.")
 
 # %%
 # Fraud by state
@@ -204,9 +216,13 @@ fraud_quarterly = (
 
 fraud_quarterly
 
-
 # %% [markdown]
 # ## Visualisations
+
+# %%
+# Create folder for charts generated
+os.makedirs("charts", exist_ok=True)
+
 
 # %%
 # Function for 'fraud rate by' chart
@@ -228,7 +244,6 @@ def fraud_rate_by_chart(fraud_by_df, category_col, title):
     plt.xlabel("Fraud Rate (%)")
     plt.ylabel(category_col.replace('_', ' '))
     plt.tight_layout()
-    plt.savefig(f"charts/fraud_rate_by_{category_col.lower()}.png")
     plt.show()
 
 
@@ -271,7 +286,6 @@ plt.legend()
 plt.title("Average Claim Amount: Fraud vs Legitimate", fontweight="bold")
 plt.ylabel("Average Claim Amount ($)")
 plt.tight_layout()
-plt.savefig("charts/claim_amounts.png")
 plt.show()
 
 # %%
@@ -298,7 +312,6 @@ plt.boxplot(
 plt.xlabel("Days")
 plt.title("Days Between Service and Claim Submission", fontweight="bold")
 plt.tight_layout()
-plt.savefig("charts/submission_days.png")
 plt.show()
 
 # %%
@@ -330,7 +343,6 @@ plt.title("Fraud Rate by Quarter (2021–2025)", fontweight="bold")
 plt.legend()
 plt.xticks(rotation=45, ha="right")
 plt.tight_layout()
-plt.savefig("charts/fraud_trend.png")
 plt.show()
 
 # %% [markdown]
@@ -364,4 +376,4 @@ summary["Avg_Days_To_Submit"] = summary["Avg_Days_To_Submit"].round(1)
 
 summary.to_csv("fraud_summary.csv", index=False)
 
-summary
+summary.head()
