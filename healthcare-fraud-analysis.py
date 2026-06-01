@@ -222,18 +222,23 @@ fraud_quarterly
 # %%
 # Function for 'fraud rate by' chart
 def fraud_rate_by_chart(fraud_by_df, category_col, title):
+    
     plt.figure(figsize=(12, 5))
     plt.barh(
         fraud_by_df[category_col],
         fraud_by_df["Fraud_Rate"] * 100,
         color="#2A9D8F"
     )
+
     plt.axvline(
         x=fraud_rate * 100,
         linestyle="--",
         label=f"Overall Avg Fraud Rate ({fraud_rate:.2%})",
         color="#6C757D"
     )
+
+    plt.gca().invert_yaxis()
+
     plt.legend()
     plt.title(title, fontweight="bold")
     plt.xlabel("Fraud Rate (%)")
