@@ -44,7 +44,7 @@ fraud_df = pd.read_csv("healthcare_fraud_detection.csv")
 # ## Raw Data Overview
 
 # %%
-df = fraud_df
+df = fraud_df.copy()
 print(f"Dataset loaded: {df.shape[0]:,} rows x {df.shape[1]} columns")
 df.head()
 
