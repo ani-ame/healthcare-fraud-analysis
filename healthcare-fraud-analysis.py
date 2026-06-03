@@ -80,6 +80,18 @@ df["Prior_Visits_12m"] = df["Prior_Visits_12m"].fillna(
 # %%
 df.info()
 
+# %%
+# Drop unnecessary ID and code columns
+df.drop(columns=
+        ["Provider_ID",
+         "Claim_ID",
+         "Diagnosis_Code",
+         "Procedure_Code"],
+        inplace=True)
+
+# %%
+df.head()
+
 # %% [markdown]
 # ## Feature Engineering
 
