@@ -78,9 +78,6 @@ df["Prior_Visits_12m"] = df["Prior_Visits_12m"].fillna(
 )
 
 # %%
-df.info()
-
-# %%
 # Drop unnecessary ID and code columns
 df.drop(columns=
         ["Provider_ID",
@@ -91,6 +88,9 @@ df.drop(columns=
 
 # %%
 df.head()
+
+# %%
+df.info()
 
 # %% [markdown]
 # ## Feature Engineering
@@ -356,36 +356,3 @@ plt.legend()
 plt.xticks(rotation=45, ha="right")
 plt.tight_layout()
 plt.show()
-
-# %% [markdown]
-# ## Summary Table
-
-# %%
-summary = (
-    df.groupby(
-        [
-            "Provider_Specialty",
-            "Insurance_Type",
-            "Patient_State",
-            "Visit_Type",
-        ]
-    )
-    .agg(
-        Total_Claims=("Is_Fraud", "count"),
-        Fraud_Cases=("Is_Fraud", "sum"),
-        Fraud_Rate=("Is_Fraud", "mean"),
-        Avg_Claim_Amount=("Claim_Amount", "mean"),
-        Avg_Approved_Amount=("Approved_Amount", "mean"),
-        Avg_Days_To_Submit=("Days_Between_Service_and_Claim", "mean"),
-    )
-    .reset_index()
-)
-
-summary["Fraud_Rate"] = summary["Fraud_Rate"].round(4)  
-summary["Avg_Claim_Amount"] = summary["Avg_Claim_Amount"].round(2)
-summary["Avg_Approved_Amount"] = summary["Avg_Approved_Amount"].round(2)
-summary["Avg_Days_To_Submit"] = summary["Avg_Days_To_Submit"].round(1)
-
-summary.to_csv("fraud_summary.csv", index=False)
-
-summary.head()
