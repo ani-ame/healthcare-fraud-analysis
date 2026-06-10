@@ -236,11 +236,20 @@ fraud_quarterly
 def fraud_rate_by_chart(fraud_by_df, category_col, title):
     
     plt.figure(figsize=(12, 5))
-    plt.barh(
+    bars = plt.barh(
         fraud_by_df[category_col],
         fraud_by_df["Fraud_Rate"] * 100,
         color="#2A9D8F"
     )
+
+    for bar in bars:
+        width = bar.get_width()
+        plt.text(
+            width + 0.08,             
+            bar.get_y() + bar.get_height() / 2,  
+            f"{width:.2f}%",       
+            va="center", ha="left", fontsize=9
+        )
 
     plt.axvline(
         x=fraud_rate * 100,
@@ -280,17 +289,26 @@ fraud_rate_by_chart(
 plt.figure(figsize=(12, 5))
 
 bar_colours = ["#2A9D8F", "#4C78A8"] 
-plt.bar(
+bars = plt.bar(
     claims_avgs["Fraud_Label"],
     claims_avgs["Avg_Claim_Amount"],
     color=bar_colours,
     width=0.5
 )
 
+for bar in bars:
+    height = bar.get_height()
+    plt.text(
+        bar.get_x() + bar.get_width() / 2,
+        height + 8,                         
+        f"${height:,.0f}",
+        ha="center", fontsize=9
+    )
+
 plt.axhline(
     y=avg_claim_count,
     linestyle="--",
-    label=f"Overall Avg Claim Amount ({avg_claim_count:.0f})",
+    label=f"Overall Avg Claim Amount (${avg_claim_count:.0f})",
     color="#6C757D"
 )
 
@@ -344,6 +362,16 @@ plt.plot(
     linewidth=2,
     markersize=5
 )
+
+for x, y in zip(fraud_quarterly["Period"], fraud_quarterly["Fraud_Rate"] * 100):
+    plt.annotate(
+        f"{y:.2f}%",
+        xy=(x, y),
+        xytext=(-5, -8),        
+        textcoords="offset points",
+        ha="right", fontsize=9
+    )
+    
 plt.axhline(
     fraud_rate * 100,
     color="#6C757D",
