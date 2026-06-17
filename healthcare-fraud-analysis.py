@@ -8,9 +8,9 @@
 #       format_version: '1.3'
 #       jupytext_version: 1.19.3
 #   kernelspec:
-#     display_name: Python (venv)
+#     display_name: .venv (3.14.2.final.0)
 #     language: python
-#     name: .venv
+#     name: python3
 # ---
 
 # %% [markdown]
@@ -121,6 +121,9 @@ df["Approved_Rate"] = (df["Approved_Amount"] / df["Claim_Amount"]).round(2)
 # Fraud or legit
 df["Fraud_Label"] = df["Is_Fraud"].map({1: "Fraud", 0: "Legitimate"})
 df.head()
+
+# %%
+df.to_csv("healthcare_fraud_processed.csv", index=False)
 
 # %% [markdown]
 # ## Analysis
