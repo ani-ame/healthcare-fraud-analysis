@@ -130,7 +130,7 @@ df.to_csv("healthcare_fraud_processed.csv", index=False)
 
 # %%
 fraud_rate = df["Is_Fraud"].mean()
-avg_claim_count = df["Claim_Amount"].mean()
+avg_claim_amount = df["Claim_Amount"].mean()
 
 
 # %%
@@ -309,9 +309,9 @@ for bar in bars:
     )
 
 plt.axhline(
-    y=avg_claim_count,
+    y=avg_claim_amount,
     linestyle="--",
-    label=f"Overall Avg Claim Amount (${avg_claim_count:.0f})",
+    label=f"Overall Avg Claim Amount (${avg_claim_amount:.0f})",
     color="#6C757D"
 )
 
